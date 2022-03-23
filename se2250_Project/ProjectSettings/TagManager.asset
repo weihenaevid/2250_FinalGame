@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Fighter
+  - Enemy
+  - Obstacles
+  - PowerUps
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Blocking
+  - Actor
+  - Obstacles
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 4105254501
+    locked: 0
+  - name: Obstacles
+    uniqueID: 2585523773
+    locked: 0
+  - name: Actor
+    uniqueID: 2483104553
+    locked: 0
+  - name: Weapon
+    uniqueID: 3597353615
+    locked: 0
+  - name: PowerUps
+    uniqueID: 2382372917
+    locked: 0
+  - name: Weapon
+    uniqueID: 4015511885
+    locked: 0
