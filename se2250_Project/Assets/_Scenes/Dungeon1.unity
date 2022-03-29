@@ -11346,6 +11346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17d185b71e89d8a4fb50a27b1e15af56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textContainer: {fileID: 1438881954}
+  textPrefab: {fileID: 5584528309325833837, guid: c16a386ff33f11a4da5cac3660e8fb95, type: 3}
 --- !u!114 &1438881957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11359,7 +11361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11573,6 +11575,7 @@ MonoBehaviour:
   xpTable: 
   player: {fileID: 1297017896}
   weapon: {fileID: 0}
+  floatingTextManager: {fileID: 1438881956}
   experience: 0
 --- !u!4 &1647453291
 Transform:
