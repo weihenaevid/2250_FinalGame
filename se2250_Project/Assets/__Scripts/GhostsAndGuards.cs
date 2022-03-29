@@ -5,7 +5,6 @@ using UnityEngine;
 public class GhostsAndGuards : Mover
 {
     public int xpValue = 1;         //experience points
-
     public float triggerLength = 1;
     public float chaseLength = 5; 
     private bool chasing;
@@ -78,6 +77,7 @@ public class GhostsAndGuards : Mover
     protected override void Death()
     {
         Destroy(gameObject);
+        GameManager.instance.ShowText("+" + xpValue + " points!", 25, Color.green, transform.position, Vector3.up*50, 3.0f);
         //GameManager.instance.experience += xpValue;
         //GameManager.instance.ShowText();
 
