@@ -68,6 +68,12 @@ TextureImporter:
   - first:
       213: 7007581513968167096
     second: wizard_0
+  - first:
+      213: 4014972762650509433
+    second: bow
+  - first:
+      213: 4092838571005458826
+    second: arrow
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -618,7 +624,7 @@ TextureImporter:
         width: 14
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -626,6 +632,48 @@ TextureImporter:
       bones: []
       spriteID: 8b8aaaa524eef3160800000000000000
       internalID: 7007581513968167096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 305
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97007a4947c08b730800000000000000
+      internalID: 4014972762650509433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrow
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 304
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a893ccbdefeacc830800000000000000
+      internalID: 4092838571005458826
       vertices: []
       indices: 
       edges: []

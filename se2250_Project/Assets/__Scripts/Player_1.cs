@@ -13,7 +13,7 @@ public class Player_1 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))    // to go back to home
         {
-            transform.position = new Vector3(0, 0, 0);      
+            transform.position = new Vector3(0, -0.6f, 0);      
         }
 
         if (Input.GetKeyDown(KeyCode.E))        // to cycle through a few random positions
