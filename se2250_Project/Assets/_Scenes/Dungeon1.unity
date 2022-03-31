@@ -13118,9 +13118,9 @@ MonoBehaviour:
   - {fileID: 1297017898}
   - {fileID: 1962844777}
   - {fileID: 1725150877}
-  player1: {fileID: 1297017895}
-  player2: {fileID: 1962844774}
-  player3: {fileID: 1725150874}
+  player0: {fileID: 1297017895}
+  player1: {fileID: 1962844774}
+  player2: {fileID: 1725150874}
   boundX: 0.15
   boundY: 0.05
 --- !u!1 &2022763098
