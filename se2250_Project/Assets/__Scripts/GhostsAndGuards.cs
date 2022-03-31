@@ -77,10 +77,8 @@ public class GhostsAndGuards : Mover
     protected override void Death()
     {
         Destroy(gameObject);
+        GameManager.instance.experience += xpValue;
         GameManager.instance.ShowText("+" + xpValue + " points!", 20, Color.green, transform.position, Vector3.up*50, 3.0f);
-        //GameManager.instance.experience += xpValue;
-        //GameManager.instance.ShowText();
-
     }
 
     
