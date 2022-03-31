@@ -4,36 +4,50 @@ using UnityEngine;
 
 public class PlayerTransition : MonoBehaviour
 {
-    public GameObject Player_1;
-    public GameObject Player_2;
-    public GameObject Player_3;
+    public GameObject player1, player2, player3;
+    int whichCharacter = 1;
+    private Transform player;
 
     public void Start()
     {
-        Player_1.SetActive(true);
-        Player_2.SetActive(false);
-        Player_3.SetActive(false);    
+        player1.SetActive(true);
+        player2.SetActive(false);
+        player3.SetActive(false);    
     }
 
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))    
         {
-            Player_1.SetActive(true);
-            Player_2.SetActive(false);
-            Player_3.SetActive(false);
+            SwitchAvatar();
         }
-        if (Input.GetKeyDown(KeyCode.O))    
-        {
-            Player_1.SetActive(false);
-            Player_2.SetActive(true);
-            Player_3.SetActive(false);
-        }
-        if (Input.GetKeyDown(KeyCode.I))    
-        {
-            Player_1.SetActive(false);
-            Player_2.SetActive(false);
-            Player_3.SetActive(true);
+    }
+    public void SwitchAvatar ()
+    {
+        switch(whichCharacter){
+            case 1:
+                whichCharacter = 2;
+                player2.transform.position = player1.transform.position;
+                player1.gameObject.SetActive(false);
+                player2.gameObject.SetActive(true);
+                player3.gameObject.SetActive(false);
+                break;
+
+            case 2:
+                whichCharacter = 3;
+                player3.transform.position = player2.transform.position;
+                player1.gameObject.SetActive(false);
+                player2.gameObject.SetActive(false);
+                player3.gameObject.SetActive(true);
+                break;
+
+            case 3:
+                whichCharacter = 1;
+                player1.transform.position = player2.transform.position;
+                player1.gameObject.SetActive(true);
+                player2.gameObject.SetActive(false);
+                player3.gameObject.SetActive(false);
+                break;
         }
     }
 }
