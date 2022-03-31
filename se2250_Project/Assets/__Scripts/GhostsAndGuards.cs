@@ -12,6 +12,11 @@ public class GhostsAndGuards : Mover
     private Transform playerTransform;
     private Vector3 startingPosition;
 
+    // gameobjects
+    public GameObject player0;
+    public GameObject player1;
+    public GameObject player2;
+
     //ghost combat style
     //Hitbox
     public ContactFilter2D filter;
@@ -21,14 +26,28 @@ public class GhostsAndGuards : Mover
     protected override void Start()
     {
         base.Start();
+        
+        
 
-        playerTransform = GameObject.Find("mainPlayer").transform;
         startingPosition = transform.position;
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
     }
 
     protected override void FixedUpdate()
     {
+
+        if(player0.activeInHierarchy == true)
+        {
+            playerTransform = GameObject.Find("mainPlayer").transform;
+        }
+        if(player1.activeInHierarchy == true)
+        {
+            playerTransform = GameObject.Find("wizardPlayer").transform;
+        }
+        if (player2.activeInHierarchy == true)
+        {
+            playerTransform = GameObject.Find("piratePlayer").transform;
+        }
         //player in range
         if(Vector3.Distance(playerTransform.position, startingPosition) < chaseLength)
         {
@@ -65,6 +84,14 @@ public class GhostsAndGuards : Mover
             }
 
             if (hits[i].tag == "Fighter" && hits[i].name == "mainPlayer")
+            {
+                collidingWithPlayer = true;
+            }
+            else if (hits[i].tag == "Fighter" && hits[i].name == "wizardPlayer")
+            {
+                collidingWithPlayer = true;
+            }
+            else if(hits[i].tag == "Fighter" && hits[i].name == "piratePlayer")
             {
                 collidingWithPlayer = true;
             }
