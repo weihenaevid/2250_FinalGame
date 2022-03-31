@@ -10,7 +10,7 @@ public class Portal : Collidable
 
     protected override void OnCollide(Collider2D col)
     {
-        if(col.name == "mainPlayer")
+        if(col.name == "mainPlayer" || col.name == "wizardPlayer" || col.name == "piratePlayer")
         {
             //teleport the player
             //string sceneName = 
