@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerTransition : MonoBehaviour
 {
     public GameObject player1, player2, player3;
-    int whichCharacter = 1;
+   public int whichCharacter = 1;
     private Transform player;
 
     public void Start()
@@ -43,7 +43,7 @@ public class PlayerTransition : MonoBehaviour
 
             case 3:
                 whichCharacter = 1;
-                player1.transform.position = player2.transform.position;
+                player1.transform.position = player3.transform.position;
                 player1.gameObject.SetActive(true);
                 player2.gameObject.SetActive(false);
                 player3.gameObject.SetActive(false);

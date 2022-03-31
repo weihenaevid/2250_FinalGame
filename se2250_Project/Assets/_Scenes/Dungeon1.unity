@@ -12886,7 +12886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1962844775
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13103,7 +13103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dea05aa047804eb2a9e0128060ad968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookAt: {fileID: 1297017898}
+  lookAt: {fileID: 2111336199}
   boundX: 0.15
   boundY: 0.05
 --- !u!1 &2022763098
@@ -22802,9 +22802,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf52358e803c1445bf5cf3daffd2e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player_1: {fileID: 1297017895}
-  Player_2: {fileID: 1962844774}
-  Player_3: {fileID: 1725150874}
+  player1: {fileID: 1297017895}
+  player2: {fileID: 1962844774}
+  player3: {fileID: 1725150874}
 --- !u!1 &2113476576
 GameObject:
   m_ObjectHideFlags: 0
@@ -23347,9 +23347,10 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  grenadeSpeed: 2.5
-  grenadeDistance: 0.25
-  grenade: {fileID: 0}
+  grenadeSpeed: []
+  grenadeDistance: []
+  grenade:
+  - {fileID: 0}
 --- !u!1001 &6914418198226322661
 PrefabInstance:
   m_ObjectHideFlags: 0
