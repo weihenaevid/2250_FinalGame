@@ -13103,7 +13103,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dea05aa047804eb2a9e0128060ad968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookAt: {fileID: 2111336199}
+  lookAt:
+  - {fileID: 1297017898}
+  - {fileID: 1962844777}
+  - {fileID: 1725150877}
+  player1: {fileID: 1297017895}
+  player2: {fileID: 1962844774}
+  player3: {fileID: 1725150874}
   boundX: 0.15
   boundY: 0.05
 --- !u!1 &2022763098
@@ -22805,6 +22811,7 @@ MonoBehaviour:
   player1: {fileID: 1297017895}
   player2: {fileID: 1962844774}
   player3: {fileID: 1725150874}
+  whichCharacter: 1
 --- !u!1 &2113476576
 GameObject:
   m_ObjectHideFlags: 0
