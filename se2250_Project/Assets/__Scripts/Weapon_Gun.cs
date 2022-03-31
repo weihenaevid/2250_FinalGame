@@ -40,7 +40,7 @@ public class Weapon_Gun : MonoBehaviour
             
         }
 
-        if(Input.GetKeyDown(KeyCode.P))
+        if(Input.GetKeyDown(KeyCode.H))
         {
             if(gun == true )//switch from sword to gun setting
                 {
