@@ -6616,6 +6616,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150207198}
     m_Modifications:
+    - target: {fileID: 2372945394098353404, guid: c7b34e773910b944b9bf8de4aa656625, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2767528327445682458, guid: c7b34e773910b944b9bf8de4aa656625, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11953,6 +11957,9 @@ MonoBehaviour:
   xpValue: 10
   triggerLength: 0
   chaseLength: 0
+  player0: {fileID: 0}
+  player1: {fileID: 0}
+  player2: {fileID: 0}
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -12150,6 +12157,9 @@ MonoBehaviour:
   xpValue: 1
   triggerLength: 1
   chaseLength: 5
+  player0: {fileID: 1297017895}
+  player1: {fileID: 296412450}
+  player2: {fileID: 710080990}
   filter:
     useTriggers: 0
     useLayerMask: 0
