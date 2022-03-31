@@ -7,14 +7,13 @@ public class Mover : Fighter
     protected BoxCollider2D boxCollider;
     private Vector3 moveDelta;
     private RaycastHit2D hit;
-    protected float ySpeed = 0.75f;
-    protected float xSpeed = 1.0f;
+    public float ySpeed = 0.75f;
+    public float xSpeed = 1.0f;
 
     private Vector3 moveDir;
 
     private bool facingRight;
 
-    public float dashLength = 0.4f;
 
     protected virtual void Start()
     {
@@ -31,11 +30,11 @@ public class Mover : Fighter
 
     protected virtual void FixedUpdate()
     {
-         if (Input.GetKeyDown(KeyCode.E))         // if E is pressed
-        {         
-           transform.position += transform.position * dashLength;
+        //  if (Input.GetKeyDown(KeyCode.E))         // if E is pressed
+        // {         
+        //    transform.position += transform.position * dashLength;
 
-        }
+        // }
 
     }
 

@@ -3070,6 +3070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelText: {fileID: 0}
   xpText: {fileID: 1096885036}
+  hitpointText: {fileID: 0}
   characterSelectionSprite: {fileID: 0}
   weaponSprite: {fileID: 1241182977}
   xpBar: {fileID: 436924954}
@@ -6356,6 +6357,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookAt: {fileID: 1297017898}
+  lookAt1: {fileID: 0}
+  lookAt2: {fileID: 0}
+  lookAt3: {fileID: 0}
   boundX: 0.15
   boundY: 0.05
 --- !u!1 &2003487054
@@ -11109,7 +11113,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279929233347019012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.703, y: 2.355, z: 0}
+  m_LocalPosition: {x: 4.72, y: 2.355, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 2003487055}
