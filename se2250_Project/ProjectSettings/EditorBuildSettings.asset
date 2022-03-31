@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/_Scenes/Dungeon1.unity
+    guid: b1445192fc88b4e2f94d214d405a4e55
+  - enabled: 1
+    path: Assets/_Scenes/BigBossLevel.unity
+    guid: 0980b2dec9da94ba4a8481670c4d6809
   m_configObjects: {}
