@@ -236,6 +236,9 @@ TextureImporter:
   - first:
       213: 9048021198963646631
     second: menu_0
+  - first:
+      213: -1655761581076612383
+    second: fireball_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1962,7 +1965,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1970,6 +1973,27 @@ TextureImporter:
       bones: []
       spriteID: 7a0ae6c8757019d70800000000000000
       internalID: 9048021198963646631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireball_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea70375d9d8509e0800000000000000
+      internalID: -1655761581076612383
       vertices: []
       indices: 
       edges: []

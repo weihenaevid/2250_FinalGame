@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour
 {
     public Transform lookAt;
+    
     public float boundX = 0.15f;
     public float boundY = 0.05f;
 
@@ -13,7 +14,9 @@ public class CameraScript : MonoBehaviour
         Vector3 delta = Vector3.zero;
 
         //this is to check if we're inside the bounds on the Y axis
-        float deltaX = lookAt.position.x - transform.position.x;
+
+
+        float deltaX = lookAt.position.x - transform.position.x;//x player1
         if(deltaX > boundX || deltaX < -boundX)
         {
             if(transform.position.x < lookAt.position.x)
@@ -25,10 +28,7 @@ public class CameraScript : MonoBehaviour
                 delta.x = deltaX + boundX;
             }
         }
-
-    
-
-        float deltaY = lookAt.position.y - transform.position.y;
+        float deltaY = lookAt.position.y - transform.position.y;//y player1
         if(deltaY > boundY || deltaY < -boundY)
         {
             if(transform.position.y < lookAt.position.y)
@@ -39,7 +39,6 @@ public class CameraScript : MonoBehaviour
                 delta.x = deltaY + boundY;
             }
         }
-
         transform.position += new Vector3(delta.x, deltaY, 0);
     }
 }
