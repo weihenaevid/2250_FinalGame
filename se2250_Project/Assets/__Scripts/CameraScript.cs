@@ -4,40 +4,26 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-   public Transform [] lookAt; //need to fix
-    public GameObject player1;
-    public GameObject player2;
-    public GameObject player3;
+    public Transform [] lookAt;     // array of transforms for players
+    public GameObject player0;      // rehead
+    public GameObject player1;      // wizard
+    public GameObject player2;      // pirate
 
-    //private Transform lookAt;
-    //   public Transform lookAt1, lookAt2, lookAt3;
 
     public float boundX = 0.15f;
     public float boundY = 0.05f;
 
     private PlayerTransition switchPlayer;
-
-    // private void Update()
-    // {
-    //     if(switchPlayer.whichCharacter == 2){
-    //         lookAt.transform.position = lookAt2.transform.position;
-    //     }
-    //     else if (switchPlayer.whichCharacter == 3){
-    //         lookAt.transform.position = lookAt3.transform.position;
-    //     }
-    //     else {
-    //         lookAt.transform.position = lookAt1.transform.position;
-    //     }
-    // }    
+   
 
     private void LateUpdate()
     {
         Vector3 delta = Vector3.zero;
 
-        //if (switchPlayer.whichCharacter == 1)
-        if(player1.activeInHierarchy == true)
+        // for first player
+        if(player0.activeInHierarchy == true)
         {
-            float deltaX = lookAt[0].position.x - transform.position.x;//x player1
+            float deltaX = lookAt[0].position.x - transform.position.x;
             if (deltaX > boundX || deltaX < -boundX)
             {
                 if (transform.position.x < lookAt[0].position.x)
@@ -49,7 +35,7 @@ public class CameraScript : MonoBehaviour
                     delta.x = deltaX + boundX;
                 }
             }
-            float deltaY = lookAt[0].position.y - transform.position.y;//y player1
+            float deltaY = lookAt[0].position.y - transform.position.y;
             if (deltaY > boundY || deltaY < -boundY)
             {
                 if (transform.position.y < lookAt[0].position.y)
@@ -64,10 +50,9 @@ public class CameraScript : MonoBehaviour
             transform.position += new Vector3(delta.x, deltaY, 0);
         }
 
-         if (player2.activeInHierarchy == true)
+         if (player1.activeInHierarchy == true)             // check if player 2 is selected
         {
-            // second
-            float deltaX1 = lookAt[1].position.x - transform.position.x;//x player1
+            float deltaX1 = lookAt[1].position.x - transform.position.x;
             if (deltaX1 > boundX || deltaX1 < -boundX)
             {
                 if (transform.position.x < lookAt[1].position.x)
@@ -79,7 +64,7 @@ public class CameraScript : MonoBehaviour
                     delta.x = deltaX1 + boundX;
                 }
             }
-            float deltaY1 = lookAt[1].position.y - transform.position.y;//y player1
+            float deltaY1 = lookAt[1].position.y - transform.position.y;
             if (deltaY1 > boundY || deltaY1 < -boundY)
             {
                 if (transform.position.y < lookAt[1].position.y)
@@ -93,10 +78,9 @@ public class CameraScript : MonoBehaviour
             }
             transform.position += new Vector3(delta.x, deltaY1, 0);
 
-        } if (player3.activeInHierarchy == true) { 
+        } if (player2.activeInHierarchy == true) {      // check if player 2 is selected
 
-            // third2
-            float deltaX2 = lookAt[2].position.x - transform.position.x;//x player1
+            float deltaX2 = lookAt[2].position.x - transform.position.x;
             if (deltaX2 > boundX || deltaX2 < -boundX)
             {
                 if (transform.position.x < lookAt[2].position.x)
@@ -108,7 +92,7 @@ public class CameraScript : MonoBehaviour
                     delta.x = deltaX2 + boundX;
                 }
             }
-            float deltaY2 = lookAt[2].position.y - transform.position.y;//y player1
+            float deltaY2 = lookAt[2].position.y - transform.position.y;
             if (deltaY2 > boundY || deltaY2 < -boundY)
             {
                 if (transform.position.y < lookAt[2].position.y)
@@ -121,118 +105,6 @@ public class CameraScript : MonoBehaviour
                 }
             }
             transform.position += new Vector3(delta.x, deltaY2, 0);
-
         }
-
-        //this is to check if we're inside the bounds on the Y axis
-        // float deltaX = lookAt.position.x - transform.position.x;//x player1
-        //     if(deltaX > boundX || deltaX < -boundX)
-        //     {
-        //         if(transform.position.x < lookAt.position.x)
-        //         {
-        //             delta.x = deltaX - boundX;
-        //         }
-        //         else x
-        //         {
-        //             delta.x = deltaX + boundX;
-        //         }
-        //     }
-        //     float deltaY = lookAt.position.y - transform.position.y;//y player1
-        //     if(deltaY > boundY || deltaY < -boundY)
-        //     {
-        //         if(transform.position.y < lookAt.position.y)
-        //         {
-        //             delta.y = deltaY - boundY;
-        //         } else 
-        //         {
-        //             delta.x = deltaY + boundY;
-        //         }
-        //     }
-        //     transform.position += new Vector3(delta.x, deltaY, 0);
-
-        // if(switchPlayer.whichCharacter == 2)
-        // {
-        //     float deltaX2 = lookAt2.position.x - transform.position.x;//x player1
-        //     if(deltaX2 > boundX || deltaX2 < -boundX)
-        //     {
-        //         if(transform.position.x < lookAt2.position.x)
-        //         {
-        //             delta.x = deltaX2 - boundX;
-        //         }
-        //         else 
-        //         {
-        //             delta.x = deltaX2 + boundX;
-        //         }
-        //     }
-        //     float deltaY2 = lookAt2.position.y - transform.position.y;//y player1
-        //     if(deltaY2 > boundY || deltaY2 < -boundY)
-        //     {
-        //         if(transform.position.y < lookAt2.position.y)
-        //         {
-        //             delta.y = deltaY2 - boundY;
-        //         } else 
-        //         {
-        //             delta.x = deltaY2 + boundY;
-        //         }
-        //     }
-        //     transform.position += new Vector3(delta.x, deltaY2, 0);
-        // }
-        // else if(switchPlayer.whichCharacter == 3)
-        // {
-        //     float deltaX3 = lookAt3.position.x - transform.position.x;//x player1
-        //     if(deltaX3 > boundX || deltaX3 < -boundX)
-        //     {
-        //         if(transform.position.x < lookAt3.position.x)
-        //         {
-        //             delta.x = deltaX3 - boundX;
-        //         }
-        //         else 
-        //         {
-        //             delta.x = deltaX3 + boundX;
-        //         }
-        //     }
-        //     float deltaY3 = lookAt3.position.y - transform.position.y;//y player1
-        //     if(deltaY3 > boundY || deltaY3 < -boundY)
-        //     {
-        //         if(transform.position.y < lookAt3.position.y)
-        //         {
-        //             delta.y = deltaY3 - boundY;
-        //         } else 
-        //         {
-        //             delta.x = deltaY3 + boundY;
-        //         }
-        //     }
-        //     transform.position += new Vector3(delta.x, deltaY3, 0);
-        // }
-        // else
-        // {
-        // //this is to check if we're inside the bounds on the Y axis
-        // float deltaX1 = lookAt1.position.x - transform.position.x;//x player1
-        //     if(deltaX1 > boundX || deltaX1 < -boundX)
-        //     {
-        //         if(transform.position.x < lookAt1.position.x)
-        //         {
-        //             delta.x = deltaX1 - boundX;
-        //         }
-        //         else 
-        //         {
-        //             delta.x = deltaX1 + boundX;
-        //         }
-        //     }
-        //     float deltaY1 = lookAt1.position.y - transform.position.y;//y player1
-        //     if(deltaY1 > boundY || deltaY1 < -boundY)
-        //     {
-        //         if(transform.position.y < lookAt1.position.y)
-        //         {
-        //             delta.y = deltaY1 - boundY;
-        //         } else 
-        //         {
-        //             delta.x = deltaY1 + boundY;
-        //         }
-        //     }
-        //     transform.position += new Vector3(delta.x, deltaY1, 0);
-        // }
-
-
     }
 }
