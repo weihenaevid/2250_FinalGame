@@ -5,11 +5,15 @@ using UnityEngine;
 public class EnemyHitbox : Collidable
 {
     public int damage = 1;
-    public float pushForce;
+    public float pushForce; 
 
     protected override void OnCollide(Collider2D col)
     {
-        if (col.tag == "Fighter" && col.name == "mainPlayer")
+        string[] chars = {"mainPlayer", "wizardPlayer", "piratePlayer"};
+
+        for (int i = 0; i < chars.Length; i++)
+        {
+            if (col.tag == "Fighter" && col.name == chars[i])
         {
             Damage dmg = new Damage
             {
@@ -19,5 +23,8 @@ public class EnemyHitbox : Collidable
             };
             col.SendMessage("RecieveDamage", dmg);
         }
+            
+        }
+        
     }
 }

@@ -241,6 +241,7 @@ TextureImporter:
     second: fireball_0
   - first:
       213: -5657005582927067749
+    second: chest
     second: waterball_0
   externalObjects: {}
   serializedVersion: 11
@@ -2002,6 +2003,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: chest
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 32
       name: waterball_0
       rect:
         serializedVersion: 2
