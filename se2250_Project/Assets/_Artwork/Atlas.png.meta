@@ -245,6 +245,9 @@ TextureImporter:
   - first:
       213: 2896179404482671487
     second: chest_1
+  - first:
+      213: 2526274175933715322
+    second: waterball1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2042,6 +2045,27 @@ TextureImporter:
       bones: []
       spriteID: f73fdf1e2db413820800000000000000
       internalID: 2896179404482671487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterball1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7395cd6af02f0320800000000000000
+      internalID: 2526274175933715322
       vertices: []
       indices: 
       edges: []
