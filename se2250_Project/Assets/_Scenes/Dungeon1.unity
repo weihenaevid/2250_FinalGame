@@ -2128,6 +2128,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79f3922156f33ec49bb43850c2f3bf7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &855782966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855782964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9892cfec4a2085e47bdc0f9b93c604d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!1 &870274412
 GameObject:
   m_ObjectHideFlags: 0
@@ -23666,6 +23692,10 @@ PrefabInstance:
       propertyPath: thrownProjectilePrefab
       value: 
       objectReference: {fileID: 730596391}
+    - target: {fileID: 7498287403091320400, guid: 3b7e47d11e6bdb843a0223869e92bd86, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7498287403091320401, guid: 3b7e47d11e6bdb843a0223869e92bd86, type: 3}
       propertyPath: m_RootOrder
       value: 13
