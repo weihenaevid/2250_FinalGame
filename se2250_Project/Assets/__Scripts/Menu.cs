@@ -12,6 +12,10 @@ public class Menu : MonoBehaviour
     public Image characterSelectionSprite, weaponSprite; 
     public RectTransform xpBar;
 
+    public GameObject playerG0;      // rehead
+    public GameObject playerG1;      // wizard
+    public GameObject playerG2;      // pirate
+
     //charcater selection
 
     //weapon change
@@ -28,7 +32,29 @@ public class Menu : MonoBehaviour
         //weaponSprite.sprite = GameManager.instance.weaponSprite[0];
 
         levelText.text = GameManager.instance.GetCurrentLevel().ToString();
-        hitpointText.text = GameManager.instance.player.hitpoint.ToString();
+
+        if(playerG0.activeInHierarchy){
+            hitpointText.text = GameManager.instance.player1.hitpoint.ToString();
+        }
+        else if(playerG1.activeInHierarchy)
+        {
+            hitpointText.text = GameManager.instance.player2.hitpoint.ToString();
+        }
+        else if(playerG2.activeInHierarchy)
+        {
+            hitpointText.text = GameManager.instance.player3.hitpoint.ToString();
+        }
+
+        // if(GameManager.instance.player1.activeInHierarchy)
+        // {
+        //     hitpointText.text = GameManager.instance.player1.hitpoint.ToString();
+
+        // }
+        // else if (GameManager.instance.player2.activeInHierarchy)
+        // {
+        //     hitpointText.text = GameManager.instance.player2.hitpoint.ToString();
+
+        // }
 
         //exp bar
         int currLevel = GameManager.instance.GetCurrentLevel();

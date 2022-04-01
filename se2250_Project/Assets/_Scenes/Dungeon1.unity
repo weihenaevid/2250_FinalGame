@@ -7001,6 +7001,9 @@ MonoBehaviour:
   characterSelectionSprite: {fileID: 0}
   weaponSprite: {fileID: 1241182977}
   xpBar: {fileID: 436924954}
+  playerG0: {fileID: 1297017895}
+  playerG1: {fileID: 1962844774}
+  playerG2: {fileID: 1725150874}
 --- !u!95 &949323787
 Animator:
   serializedVersion: 3
@@ -11909,7 +11912,9 @@ MonoBehaviour:
   - {fileID: 1839998147110866507, guid: 65354f95c674e4f768a95c9a749e9da1, type: 3}
   - {fileID: -3476979527478288156, guid: 23ae0c0f760c4c2418ba9f351c1e6d56, type: 3}
   xpTable: 3c00000050000000640000007800000096000000
-  player: {fileID: 1297017896}
+  player1: {fileID: 1297017896}
+  player2: {fileID: 1962844778}
+  player3: {fileID: 1725150875}
   weapon: {fileID: 0}
   floatingTextManager: {fileID: 1438881956}
   experience: 0
