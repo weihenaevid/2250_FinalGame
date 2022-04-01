@@ -242,6 +242,7 @@ TextureImporter:
   - first:
       213: -5657005582927067749
     second: chest
+    second: waterball_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2007,6 +2008,11 @@ TextureImporter:
         serializedVersion: 2
         x: 240
         y: 32
+      name: waterball_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 31
         width: 16
         height: 16
       alignment: 0
