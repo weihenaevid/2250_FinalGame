@@ -11149,7 +11149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4024367eaed514ec29bb5495abc9abbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 20
+  hitpoint: 30
   maxHitPoint: 10
   recoverySpeed: 0.2
   ySpeed: 0.75
@@ -12289,7 +12289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4024367eaed514ec29bb5495abc9abbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 20
+  hitpoint: 30
   maxHitPoint: 10
   recoverySpeed: 0.2
   ySpeed: 1.25
@@ -13001,7 +13001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4024367eaed514ec29bb5495abc9abbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 40
+  hitpoint: 50
   maxHitPoint: 10
   recoverySpeed: 0.2
   ySpeed: 0.75
@@ -23298,6 +23298,18 @@ PrefabInstance:
     - target: {fileID: 4597033116460079248, guid: d424ddf0bbc2c2340894e0d2604e2d40, type: 3}
       propertyPath: player0
       value: 
+      objectReference: {fileID: 1297017895}
+    - target: {fileID: 4597033116460079248, guid: d424ddf0bbc2c2340894e0d2604e2d40, type: 3}
+      propertyPath: player1
+      value: 
+      objectReference: {fileID: 1962844774}
+    - target: {fileID: 4597033116460079248, guid: d424ddf0bbc2c2340894e0d2604e2d40, type: 3}
+      propertyPath: player2
+      value: 
+      objectReference: {fileID: 1725150874}
+    - target: {fileID: 4597033116460079248, guid: d424ddf0bbc2c2340894e0d2604e2d40, type: 3}
+      propertyPath: xpValue
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5398061653271317068, guid: d424ddf0bbc2c2340894e0d2604e2d40, type: 3}
       propertyPath: m_Name
@@ -23353,12 +23365,12 @@ MonoBehaviour:
   recoverySpeed: 0.2
   ySpeed: 0.75
   xSpeed: 1
-  xpValue: 1
+  xpValue: 50
   triggerLength: 1
   chaseLength: 5
-  player0: {fileID: 0}
-  player1: {fileID: 0}
-  player2: {fileID: 0}
+  player0: {fileID: 1297017895}
+  player1: {fileID: 1962844774}
+  player2: {fileID: 1725150874}
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -23377,6 +23389,7 @@ MonoBehaviour:
   grenadeDistance: []
   grenade:
   - {fileID: 0}
+  chest: {fileID: 0}
 --- !u!1001 &6914418198226322661
 PrefabInstance:
   m_ObjectHideFlags: 0
