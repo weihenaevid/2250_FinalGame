@@ -1161,7 +1161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18ef0d2a060eb947a8dfd0358deea09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrownProjectilePrefab: {fileID: 14110846}
+  thrownProjectilePrefab: {fileID: 7498287403091320402, guid: 3b7e47d11e6bdb843a0223869e92bd86, type: 3}
   launchOffset: {fileID: 1609841170}
 --- !u!114 &339594253
 MonoBehaviour:

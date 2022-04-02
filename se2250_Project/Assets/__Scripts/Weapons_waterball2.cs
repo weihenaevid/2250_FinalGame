@@ -25,18 +25,4 @@ public class Weapons_waterball2 : MonoBehaviour
             Destroy(thrownP, 2);
         }
     }
-
-    int damage = 30;
-    void OnTriggerEnter2D(Collider2D hitInfo)
-    {
-        Enemy enemy = hitInfo.GetComponent<Enemy>();
-        if (enemy != null)
-        {
-            enemy.TakeDamage(damage);
-        }
-
-        //  Instantiate(impactEffect, transform.position, transform.rotation);
-
-        Destroy(thrownP);
-    }
 }

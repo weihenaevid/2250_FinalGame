@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour
     public float speed = 3f;
     public bool thrown;
     public Vector3 offset;
+    public int damage = 2;
+
 
     // Start is called before the first frame update
     private void Start()
@@ -23,5 +25,21 @@ public class Projectile : MonoBehaviour
     public void Update()
     {
         transform.position += -transform.right * speed * Time.deltaTime;
+    }
+
+    void OnTriggerEnter2D(Collider2D hit)      // so the waterball destroys once it hitas the opponent
+    {
+        if (hit.tag == "Fighter")
+        {
+            Debug.Log(hit.name); 
+            Destroy(gameObject);
+        }
+
+        Enemy enemy = hit.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage);
+        }
+
     }
 }
