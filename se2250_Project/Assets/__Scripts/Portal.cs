@@ -7,6 +7,7 @@ public class Portal : Collidable
 {
 
     public string sceneName;
+    Pickups levelUp;
 
     protected override void OnCollide(Collider2D col)
     {
@@ -14,7 +15,10 @@ public class Portal : Collidable
         {
             //teleport the player
             //string sceneName = 
-            SceneManager.LoadScene("BigBossLevel");
+            if(levelUp.powerupsCollected == 5)
+            {
+                SceneManager.LoadScene("BigBossLevel");
+            }
         }
     }
     
