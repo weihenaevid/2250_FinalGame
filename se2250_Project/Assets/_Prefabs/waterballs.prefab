@@ -97,6 +97,7 @@ MonoBehaviour:
   speed: 3
   thrown: 1
   offset: {x: 0.1, y: 0.25, z: 0}
+  damage: 6
 --- !u!212 &9207292920262179380
 SpriteRenderer:
   m_ObjectHideFlags: 0
