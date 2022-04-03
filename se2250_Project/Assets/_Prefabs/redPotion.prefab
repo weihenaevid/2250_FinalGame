@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7464105940410578030}
   - component: {fileID: 7464105940410578031}
   - component: {fileID: 7464105940410578016}
+  - component: {fileID: 6228198886604780851}
   m_Layer: 8
   m_Name: redPotion
   m_TagString: PowerUps
@@ -109,3 +110,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.101977706, y: 0.123502076}
   m_EdgeRadius: 0
+--- !u!114 &6228198886604780851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7464105940410578017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b3f6bf9dae3824ca452e29b7625fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key1: {fileID: 0}
+  key2: {fileID: 0}
+  key3: {fileID: 0}
+  gPotion: {fileID: 0}
+  rPotion: {fileID: 0}
+  chest: {fileID: 0}
+  imageKey1: {fileID: 0}
+  imageKey2: {fileID: 0}
+  imageKey3: {fileID: 0}
+  imageGPotion: {fileID: 0}
+  imageRPotion: {fileID: 0}
+  imageChest: {fileID: 0}
+  powerupsCollected: 0
