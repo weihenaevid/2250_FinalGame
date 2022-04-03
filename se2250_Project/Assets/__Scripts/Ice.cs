@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class Ice : MonoBehaviour
 {
-    public float speed = 5f;
-    public Rigidbody2D rb;
-    //public Tranform endPos;
-
-    // Start is called before the first frame update
-    void Start()
+       public int damage = 2;
+    void OnTriggerEnter2D(Collider2D other)
     {
-//        rb.MovePosition()
-        rb.velocity = transform.right * speed;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(other.CompareTag("Fighter"))
+        {
+            Enemy enemy = other.GetComponent<Enemy>();
+            if(enemy != null)
+            {
+                enemy.TakeDamage(damage);
+            }
+            Destroy(other.gameObject);
+        }
     }
 }

@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2038493362656998988}
   - component: {fileID: 2038493362656998979}
-  - component: {fileID: 2063106392034035744}
-  - component: {fileID: 2316159645775429526}
-  m_Layer: 0
+  - component: {fileID: -7022121023449659527}
+  - component: {fileID: 2762985837186671718}
+  m_Layer: 7
   m_Name: icePrefab
-  m_TagString: Untagged
+  m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038493362656998978}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0.00000087422785}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.05101468, y: 0.059589203, z: 1}
   m_Children: []
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -697613681
-  m_SortingLayer: 4
+  m_SortingLayerID: -1811862743
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8b2f5e7983580244586650f14d46d94f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -84,21 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2063106392034035744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2038493362656998978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dce3243026c94c4ab4909ad4314a985, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  rb: {fileID: 2316159645775429526}
---- !u!50 &2316159645775429526
+--- !u!50 &-7022121023449659527
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -113,9 +99,43 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
+--- !u!68 &2762985837186671718
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038493362656998978}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.8684436, y: -0.89804345}
+  - {x: 0.7367746, y: -1.0158546}
+  - {x: -0.9431927, y: -1.1907458}
+  - {x: -0.34936762, y: -0.75914454}
+  - {x: -3.2943904, y: -0.47083274}
+  - {x: -1.775895, y: 0.10808149}
+  - {x: -2.8320422, y: 0.65534747}
+  - {x: -1.3447782, y: 0.7599124}
+  - {x: -1.6393979, y: 1.207396}
+  - {x: -0.39890462, y: 0.5155678}
+  - {x: 1.6760974, y: -0.039045364}
+  - {x: 3.1371422, y: -0.46987513}
+  - {x: 3.2721982, y: -0.51694345}
+  - {x: 1.8258116, y: -0.8980434}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
