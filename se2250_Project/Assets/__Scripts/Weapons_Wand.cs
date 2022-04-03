@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Weapons_Wand : MonoBehaviour
 {
+    public GameObject icePrefab;
+    public Transform iceLocation;
+
     private float cooldown = 1f;
     private float lastSwing;
     
@@ -13,25 +16,19 @@ public class NewBehaviourScript : MonoBehaviour
     //upgrade
     private SpriteRenderer SpriteRenderer;
 
+
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.J))
+        if(Input.GetKey(KeyCode.J))
         {
-            if(Time.time - lastSwing > cooldown)
-            {
-                lastSwing = Time.time;
-                Swing();
-            }   
+            Instantiate(icePrefab, iceLocation.position, iceLocation.rotation);
+            anim.SetTrigger("Swing");   
         }
     }
 
-    private void Swing()
-    {
-        anim.SetTrigger("Swing");
-    }
 }
