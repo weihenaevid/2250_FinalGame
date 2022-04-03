@@ -4,35 +4,31 @@ using UnityEngine;
 
 public class PLayer_Priate : MonoBehaviour
 {
-    public float min = 2f;
-    public float max = 3f;
+    public GameObject player;
+    // public Sprite Hide;
+    // public Sprite pirate;
 
-    // Use this for initialization
-    void Start()
-    {
-
-        min = transform.position.y;
-        max = transform.position.y + 0.1f;
-        
-
-    }
-
-    public void Jump()
-    {
-        transform.position = new Vector3(transform.position.x, Mathf.PingPong(Time.time / 2, max - min) + min, transform.position.z);
-    }
-
-    public GameObject boomer;
+    bool dash = false;
+    bool play = true;
 
     private void Update()
     {
-       
         if (Input.GetKeyDown(KeyCode.X))    // to go back to home
         {
-            GameObject clone;
-          //  clone = Instantiate(boomer, new Vector3(transform.position.x, transform.position.y, 0), transform.rotation) as GameObject;
-            Destroy(Instantiate(boomer, new Vector3(transform.position.x, transform.position.y, 0), transform.rotation) as GameObject, 4f);
-        }
+            play = !play;
+           // to make player turn invisible or visible if X is clicked
+           player.GetComponent<SpriteRenderer>().enabled = !player.GetComponent<SpriteRenderer>().enabled;
+            // if(play == true){
+            //      this.gameObject.GetComponent<SpriteRenderer>().sprite = Hide;
+                 
+            // }
+            // else if (play == true){
+            //     this.gameObject.GetComponent<SpriteRenderer>().sprite = pirate;
+                
+            // }
+           
+
+        } 
 
     }
 }

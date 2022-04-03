@@ -10,7 +10,7 @@ public class Pickups : MonoBehaviour
     public Image imageKey1, imageKey2, imageKey3, imageGPotion, imageRPotion, imageChest;//the images in the inventory bar
     public int powerupsCollected = 0;
     //private Scene currentScene;
-    
+
     // Start is called before the first frame update
     void Start()
     {   
@@ -28,6 +28,7 @@ public class Pickups : MonoBehaviour
             imageKey3.enabled = true;
             imageGPotion.enabled = true;
             imageRPotion.enabled = true;
+            imageChest.enabled = false;
         }    
     }
 
