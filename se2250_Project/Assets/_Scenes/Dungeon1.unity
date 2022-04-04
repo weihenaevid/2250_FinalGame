@@ -9060,7 +9060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.53017086, g: 0.6981132, b: 0.5584384, a: 1}
+  m_Color: {r: 0.4448202, g: 0.7924528, b: 0.5014116, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13039,7 +13039,6 @@ MonoBehaviour:
   - 2.86
   - 2.25
   starting: {x: 0, y: -0.6, z: 0}
-  i: 0
 --- !u!1 &1304724953
 GameObject:
   m_ObjectHideFlags: 0
