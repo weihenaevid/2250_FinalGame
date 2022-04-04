@@ -26,9 +26,20 @@ public class Weapons_Wand : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.J))
         {
+            //yield WaitForSeconds(anim["Swing"].length * anim["Swing"].speed);
+            anim.SetTrigger("Swing");
             Instantiate(icePrefab, iceLocation.position, iceLocation.rotation);
-            anim.SetTrigger("Swing");   
+               
         }
+        if(Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            icePrefab.transform.Rotate(0.0f,-180.0f,0.0f);
+        }
+        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            icePrefab.transform.Rotate(0.0f, 360.0f, 0.0f);
+        }
+    
     }
 
 }
