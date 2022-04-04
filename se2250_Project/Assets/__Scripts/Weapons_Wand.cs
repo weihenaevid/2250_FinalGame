@@ -25,10 +25,15 @@ public class Weapons_Wand : MonoBehaviour
     public void Update()
     {
         if(Input.GetKey(KeyCode.N))
-        {
-            //yield WaitForSeconds(anim["Swing"].length * anim["Swing"].speed);
+        {        
             anim.SetTrigger("Swing");
-            Instantiate(icePrefab, iceLocation.position, iceLocation.rotation);  
+            Invoke("Blast",0.5f);
+  
         }    
+    }
+
+    public void Blast()
+    {
+        Instantiate(icePrefab, iceLocation.position, iceLocation.rotation);
     }
 }
