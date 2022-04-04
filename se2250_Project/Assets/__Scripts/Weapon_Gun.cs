@@ -8,11 +8,24 @@ public class Weapon_Gun : MonoBehaviour
     public GameObject gun;
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public GameObject wand;
+    public Transform iceLocation;
+    public GameObject player1, player2, player3;
+    public int whichWeapon = 0;
 
     void Start()
     {
-        sword.SetActive(true);
-        gun.SetActive(false);
+        if(player1.activeSelf){
+            sword.SetActive(true);
+            wand.SetActive(false);
+            gun.SetActive(false);
+        }
+        if(player2.activeSelf)
+        {
+            sword.SetActive(false);
+            wand.SetActive(true);
+            gun.SetActive(false);
+        }        
     }
 
     
@@ -20,39 +33,60 @@ public class Weapon_Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))//mouse 0 = left mouse
+        if(Input.GetButtonDown("Fire1") && gun.activeSelf)
         {
             Shoot();
         }
 
-        SwitchWeapon();
+        if(player1.activeSelf)
+        {
+            SwitchWeapon1();
+        }
+        if(player2.activeSelf)
+        {
+            SwitchWeapon2();
+        }
     }
 
-    public void SwitchWeapon()
+    public void SwitchWeapon1()
     {
         if(Input.GetKeyDown(KeyCode.G))
         {
-            if(sword == true )//switch from sword to gun setting
-            {
-                sword.SetActive(false);
-                gun.SetActive(true);
-            }
-            
+            sword.SetActive(false);
+            wand.SetActive(false);
+            gun.SetActive(true);                
         }
 
         if(Input.GetKeyDown(KeyCode.H))
         {
-            if(gun == true )//switch from sword to gun setting
-                {
             gun.SetActive(false);
             sword.SetActive(true);
-                }
+            wand.SetActive(false);
         }
     }
 
+    public void SwitchWeapon2()
+    {
+        if(Input.GetKeyDown(KeyCode.G))
+        {
+            sword.SetActive(false);
+            wand.SetActive(false);
+            gun.SetActive(true);                
+        }
+
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+            gun.SetActive(false);
+            sword.SetActive(false);
+            wand.SetActive(true);
+        }
+    }
 
     void Shoot()
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        if(player1.activeSelf || player2.activeSelf)
+        {
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        }
     }
 }

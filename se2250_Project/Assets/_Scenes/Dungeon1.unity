@@ -3121,6 +3121,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.11819056, y: 0.19080806}
   m_EdgeRadius: 0
+--- !u!1 &832408884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 832408885}
+  m_Layer: 0
+  m_Name: triggerPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &832408885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832408884}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.27, y: -0.02, z: -0.79103583}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1962844777}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &833059049
 GameObject:
   m_ObjectHideFlags: 0
@@ -8276,7 +8306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &968237784
 Transform:
   m_ObjectHideFlags: 0
@@ -13016,6 +13046,12 @@ MonoBehaviour:
   gun: {fileID: 2117435360}
   firePoint: {fileID: 508491460}
   bulletPrefab: {fileID: 8664387342666174830, guid: d245b48db69a0404995d04866bfcc4a1, type: 3}
+  wand: {fileID: 1365092774}
+  iceLocation: {fileID: 968237784}
+  player1: {fileID: 1297017895}
+  player2: {fileID: 1962844774}
+  player3: {fileID: 1725150874}
+  whichWeapon: 0
 --- !u!114 &1297017901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15141,7 +15177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1725150875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15757,6 +15793,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931094622}
   m_CullTransparentMesh: 1
+--- !u!1 &1936988360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1936988361}
+  - component: {fileID: 1936988362}
+  m_Layer: 7
+  m_Name: guns_2
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1936988361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936988360}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.063, y: -0.038, z: 0}
+  m_LocalScale: {x: 0.7982564, y: 0.53066725, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1962844777}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1936988362
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936988360}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -697613681
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7362661061344524757, guid: 23ae0c0f760c4c2418ba9f351c1e6d56, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.22, y: 0.12}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1938447248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15871,13 +15989,14 @@ GameObject:
   - component: {fileID: 1962844776}
   - component: {fileID: 1962844778}
   - component: {fileID: 1962844775}
+  - component: {fileID: 1962844779}
   m_Layer: 7
   m_Name: wizardPlayer
   m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1962844775
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15968,6 +16087,8 @@ Transform:
   m_Children:
   - {fileID: 1365092775}
   - {fileID: 968237784}
+  - {fileID: 1936988361}
+  - {fileID: 832408885}
   m_Father: {fileID: 2111336199}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15987,6 +16108,28 @@ MonoBehaviour:
   recoverySpeed: 0.2
   ySpeed: 0.75
   xSpeed: 1
+--- !u!114 &1962844779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962844774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769bf79681b2fc849b3ad37c71654b06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sword: {fileID: 1793804930}
+  gun: {fileID: 1936988360}
+  firePoint: {fileID: 832408885}
+  bulletPrefab: {fileID: 8664387342666174830, guid: d245b48db69a0404995d04866bfcc4a1, type: 3}
+  wand: {fileID: 1365092774}
+  iceLocation: {fileID: 968237784}
+  player1: {fileID: 1297017895}
+  player2: {fileID: 1962844774}
+  player3: {fileID: 1725150874}
+  whichWeapon: 0
 --- !u!1 &1985854943
 GameObject:
   m_ObjectHideFlags: 0
