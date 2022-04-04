@@ -14,15 +14,15 @@ public class Weapons : Collidable
     private SpriteRenderer spriteRenderer;
 
     //Swing
-    private Animator anim;
-    private float coolDown = 0.5f;//weapon can be swung every 0.5s
-    private float lastSwing;
+    private Animator _anim;
+    private float _coolDown = 0.5f;//weapon can be swung every 0.5s
+    private float _lastSwing;
 
     protected override void Start()
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
+        _anim = GetComponent<Animator>();
     }
 
     protected override void Update()
@@ -31,9 +31,9 @@ public class Weapons : Collidable
 
         if(Input.GetKeyDown(KeyCode.Z))
         {   
-            if(Time.time - lastSwing > coolDown)
+            if(Time.time - _lastSwing > _coolDown)
             {
-                lastSwing = Time.time;
+                _lastSwing = Time.time;
                 Swing();
             }
         }
@@ -64,14 +64,7 @@ public class Weapons : Collidable
 
     private void Swing()
     {  
-        anim.SetTrigger("Swing");
-
-    }
-
-    public void UpgradeWeapon()
-    {
-        spriteRenderer.sprite = GameManager.instance.weaponSprite[weaponLevel];
-
+        _anim.SetTrigger("Swing");
 
     }
 

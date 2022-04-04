@@ -5,9 +5,6 @@ using UnityEngine;
 public class PLayer_Priate : MonoBehaviour
 {
     public GameObject player;
-    // public Sprite Hide;
-    // public Sprite pirate;
-
     bool dash = false;
     bool play = true;
 
@@ -18,15 +15,6 @@ public class PLayer_Priate : MonoBehaviour
             play = !play;
            // to make player turn invisible or visible if X is clicked
            player.GetComponent<SpriteRenderer>().enabled = !player.GetComponent<SpriteRenderer>().enabled;
-            // if(play == true){
-            //      this.gameObject.GetComponent<SpriteRenderer>().sprite = Hide;
-                 
-            // }
-            // else if (play == true){
-            //     this.gameObject.GetComponent<SpriteRenderer>().sprite = pirate;
-                
-            // }
-           
 
         } 
 

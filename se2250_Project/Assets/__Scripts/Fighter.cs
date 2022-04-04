@@ -7,7 +7,7 @@ public class Fighter : MonoBehaviour
 {
     //decalre fields
     public int hitpoint = 10;
-    public int maxHitPoint =10;
+    private int _maxHitPoint =10;
     public float recoverySpeed = 0.2f;
 
     //Immunity
@@ -33,7 +33,6 @@ public class Fighter : MonoBehaviour
 
     protected virtual void Death()
     {
-        //Destroy(this.gameObject);
         Invoke("Restart", 2f);
 
     }
@@ -43,11 +42,5 @@ public class Fighter : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
