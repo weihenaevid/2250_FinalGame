@@ -236,17 +236,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b7e47d11e6bdb843a0223869e92bd86, type: 3}
---- !u!1 &14110845 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7498287403091320406, guid: 3b7e47d11e6bdb843a0223869e92bd86, type: 3}
-  m_PrefabInstance: {fileID: 14110844}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &14110846 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7498287403091320402, guid: 3b7e47d11e6bdb843a0223869e92bd86, type: 3}
   m_PrefabInstance: {fileID: 14110844}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14110845}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66cbdc6c0b19b0d4fadb922357c1e528, type: 3}
@@ -257,18 +252,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7498287403091320401, guid: 3b7e47d11e6bdb843a0223869e92bd86, type: 3}
   m_PrefabInstance: {fileID: 14110844}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &14110848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14110845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79f3922156f33ec49bb43850c2f3bf7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &16979331
 GameObject:
   m_ObjectHideFlags: 0
@@ -3039,7 +3022,6 @@ GameObject:
   - component: {fileID: 841588071}
   - component: {fileID: 841588070}
   - component: {fileID: 841588069}
-  - component: {fileID: 841588068}
   m_Layer: 7
   m_Name: wizardPlayer
   m_TagString: Fighter
@@ -3063,18 +3045,6 @@ Transform:
   m_Father: {fileID: 1839835321}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &841588068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 841588066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79f3922156f33ec49bb43850c2f3bf7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &841588069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3114,7 +3084,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoint: 50
-  maxHitPoint: 10
   recoverySpeed: 0.2
   ySpeed: 0.75
   xSpeed: 1
@@ -4650,8 +4619,8 @@ MonoBehaviour:
   weaponSprite: {fileID: 0}
   xpBar: {fileID: 436924954}
   playerG0: {fileID: 1297017895}
-  playerG1: {fileID: 0}
-  playerG2: {fileID: 0}
+  playerG1: {fileID: 841588066}
+  playerG2: {fileID: 1993552222}
 --- !u!95 &949323787
 Animator:
   serializedVersion: 3
@@ -7106,7 +7075,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoint: 30
-  maxHitPoint: 10
   recoverySpeed: 0.2
   ySpeed: 0.75
   xSpeed: 1
@@ -8320,14 +8288,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9971cd8326c4d598139aff7b6735c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSprite: []
-  weaponSprite:
-  - {fileID: 1839998147110866507, guid: 65354f95c674e4f768a95c9a749e9da1, type: 3}
-  - {fileID: -3476979527478288156, guid: 23ae0c0f760c4c2418ba9f351c1e6d56, type: 3}
   xpTable: 3c00000050000000640000007800000096000000
   player1: {fileID: 1297017896}
-  player2: {fileID: 0}
-  player3: {fileID: 0}
+  player2: {fileID: 841588070}
+  player3: {fileID: 1993552226}
   weapon: {fileID: 0}
   floatingTextManager: {fileID: 1569714275}
   experience: 0
@@ -9444,8 +9408,6 @@ MonoBehaviour:
   player0: {fileID: 1297017895}
   player1: {fileID: 841588066}
   player2: {fileID: 1993552222}
-  boundX: 0.15
-  boundY: 0.05
 --- !u!1 &1993552222
 GameObject:
   m_ObjectHideFlags: 0
@@ -9524,7 +9486,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoint: 30
-  maxHitPoint: 10
   recoverySpeed: 0.2
   ySpeed: 1.25
   xSpeed: 1.5
@@ -14709,7 +14670,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoint: 10
-  maxHitPoint: 10
   recoverySpeed: 0.2
   ySpeed: 0.75
   xSpeed: 1
@@ -14909,7 +14869,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoint: 20
-  maxHitPoint: 10
   recoverySpeed: 0.2
   ySpeed: 0.75
   xSpeed: 1
