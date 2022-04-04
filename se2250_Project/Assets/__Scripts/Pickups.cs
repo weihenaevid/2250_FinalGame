@@ -9,7 +9,7 @@ public class Pickups : MonoBehaviour
     public GameObject key1, key2, key3, gPotion, rPotion, chest;//gameObjects the user is interacting with
     public Image imageKey1, imageKey2, imageKey3, imageGPotion, imageRPotion, imageChest;//the images in the inventory bar
     public int powerupsCollected = 0;
-    //private Scene currentScene;
+    public Text directText;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,7 @@ public class Pickups : MonoBehaviour
         imageGPotion.enabled = false;
         imageRPotion.enabled = false;
         imageChest.enabled = false;
+        directText.enabled = false;
 
         if(SceneManager.GetActiveScene().name == "BigBossLevel")
         {
@@ -29,6 +30,8 @@ public class Pickups : MonoBehaviour
             imageGPotion.enabled = true;
             imageRPotion.enabled = true;
             imageChest.enabled = false;
+             directText.enabled = false;
+
         }    
     }
 
@@ -89,6 +92,8 @@ public class Pickups : MonoBehaviour
     {
         if(imageKey1.enabled && imageKey2.enabled && imageKey3.enabled && imageGPotion.enabled && imageRPotion.enabled){
             powerupsCollected = 5;
+            directText.enabled = true;
+            //enable
         }
     }
 }
