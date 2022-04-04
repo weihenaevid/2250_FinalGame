@@ -66,9 +66,10 @@ public class Pickups : MonoBehaviour
             {
                 imageRPotion.enabled = true;
             }
-            if(gameObject.name == "chest")//check if this gameObject is chest
+            if(gameObject.name == "chest3" || gameObject.name == "chest" )//check if this gameObject is chest
             {
                 imageChest.enabled = true;
+                
             }
             
 

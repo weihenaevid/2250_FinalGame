@@ -45,6 +45,8 @@ public class Weapons : Collidable
         {
             if (col.name == "mainPlayer") 
                 return;
+            else if (col.name == "piratePlayer")
+                return;
 
             //create a new damage object
             Damage dmg = new Damage
@@ -56,8 +58,8 @@ public class Weapons : Collidable
             };
 
             col.SendMessage("RecieveDamage", dmg);
-
         }
+        
     }
 
     private void Swing()
