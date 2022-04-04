@@ -3022,7 +3022,6 @@ GameObject:
   - component: {fileID: 841588071}
   - component: {fileID: 841588070}
   - component: {fileID: 841588069}
-  - component: {fileID: 841588068}
   m_Layer: 7
   m_Name: wizardPlayer
   m_TagString: Fighter
@@ -3046,18 +3045,6 @@ Transform:
   m_Father: {fileID: 1839835321}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &841588068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 841588066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79f3922156f33ec49bb43850c2f3bf7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &841588069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9095,6 +9082,7 @@ MonoBehaviour:
   imageRPotion: {fileID: 0}
   imageChest: {fileID: 373733092}
   powerupsCollected: 5
+  directText: {fileID: 0}
 --- !u!1 &1933244965
 GameObject:
   m_ObjectHideFlags: 0
@@ -9520,6 +9508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1993552222}
+  iSword: {fileID: 297813726}
 --- !u!114 &1993552225
 MonoBehaviour:
   m_ObjectHideFlags: 0
