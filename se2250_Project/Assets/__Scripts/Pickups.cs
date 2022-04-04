@@ -35,6 +35,8 @@ public class Pickups : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ContinueG();
+        //Debug.Log(powerupsCollected);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -70,7 +72,7 @@ public class Pickups : MonoBehaviour
                 
             }
             
-            powerupsCollected += 1;
+
             Destroy(gameObject);
             //wait 4 seconds
             
@@ -81,5 +83,12 @@ public class Pickups : MonoBehaviour
     void GameOver()
     {
 
+    }
+
+    void ContinueG()
+    {
+        if(imageKey1.enabled && imageKey2.enabled && imageKey3.enabled && imageGPotion.enabled && imageRPotion.enabled){
+            powerupsCollected = 5;
+        }
     }
 }
