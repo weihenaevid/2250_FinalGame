@@ -21,20 +21,9 @@ public class Mover : Fighter
 
     }
 
-    // private void Dashing()
-    // {
-    //     // for dashing
-       
-    // }
-
 
     protected virtual void FixedUpdate()
     {
-        //  if (Input.GetKeyDown(KeyCode.E))         // if E is pressed
-        // {         
-        //    transform.position += transform.position * dashLength;
-
-        // }
 
     }
 
@@ -82,9 +71,3 @@ public class Mover : Fighter
         }
     }
 }
-
-
-// void flip(){
-//     facingRight = !facingRight;
-//     transform.Rotate(0f,180f,0f);
-// }

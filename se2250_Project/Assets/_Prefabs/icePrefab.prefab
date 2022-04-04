@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2038493362656998979}
   - component: {fileID: -7022121023449659527}
   - component: {fileID: 2762985837186671718}
+  - component: {fileID: 5416282357197049961}
   m_Layer: 7
   m_Name: icePrefab
   m_TagString: Fighter
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038493362656998978}
-  m_LocalRotation: {x: 0, y: -0.0000017047449, z: 0, w: -1}
+  m_LocalRotation: {x: 0, y: -0.000001879591, z: 0, w: -1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.05101468, y: 0.059589203, z: 1}
   m_Children: []
@@ -139,3 +140,16 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &5416282357197049961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038493362656998978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dce3243026c94c4ab4909ad4314a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2

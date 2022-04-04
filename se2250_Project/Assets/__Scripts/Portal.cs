@@ -13,8 +13,6 @@ public class Portal : Collidable
     {
         if(col.name == "mainPlayer" || col.name == "wizardPlayer" || col.name == "piratePlayer")
         {
-            //teleport the player
-            //string sceneName = 
             if(levelUp.powerupsCollected == 5)
             {
                 SceneManager.LoadScene("BigBossLevel");

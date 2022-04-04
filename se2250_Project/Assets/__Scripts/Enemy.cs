@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     }
 
     void Die(){
-        //deathEffect??
+        //deathEffect
         Destroy(gameObject);
     }
 }

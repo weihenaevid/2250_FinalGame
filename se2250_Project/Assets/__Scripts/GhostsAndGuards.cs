@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GhostsAndGuards : Mover
 {
-    public int xpValue = 1;         //experience points
-    public float triggerLength = 1;
-    public float chaseLength = 5; 
+    public int xpValue = 1;             //experience points
+    public float triggerLength = 1;     //how close the player can get before the enemy starts following the player
+    public float chaseLength = 5;       //how far the enemy will follow the player, the enemy will stop following if the player gets too far
     private bool chasing;
-    private bool collidingWithPlayer;
+    private bool collidingWithPlayer;   //for overlapping
     private Transform playerTransform;
     private Vector3 startingPosition;
 
@@ -26,8 +26,6 @@ public class GhostsAndGuards : Mover
     protected override void Start()
     {
         base.Start();
-        
-        
 
         startingPosition = transform.position;
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
@@ -48,6 +46,7 @@ public class GhostsAndGuards : Mover
         {
             playerTransform = GameObject.Find("piratePlayer").transform;
         }
+
         //player in range
         if(Vector3.Distance(playerTransform.position, startingPosition) < chaseLength)
         {
@@ -101,6 +100,7 @@ public class GhostsAndGuards : Mover
         }
     }
 
+    //override death method for the enemies
     protected override void Death()
     {
         Destroy(gameObject);

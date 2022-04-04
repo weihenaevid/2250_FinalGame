@@ -5,7 +5,7 @@ using UnityEngine;
 public class Weapons_waterball2 : MonoBehaviour
 {
     public Projectile thrownProjectilePrefab;
-    private Projectile thrownP;
+    private Projectile _thrownP;
     public Transform launchOffset;
 
     private Rigidbody2D _rb;
@@ -20,9 +20,9 @@ public class Weapons_waterball2 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            thrownP = Instantiate(thrownProjectilePrefab);
-            thrownP = Instantiate(thrownP, launchOffset.position, transform.rotation);
-            Destroy(thrownP, 2);
+            _thrownP = Instantiate(thrownProjectilePrefab);
+            _thrownP = Instantiate(_thrownP, launchOffset.position, transform.rotation);
+            Destroy(_thrownP, 2);
         }
     }
 }

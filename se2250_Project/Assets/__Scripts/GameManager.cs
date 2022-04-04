@@ -11,9 +11,6 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    //Resources
-    public List<Sprite> playerSprite;
-    public List<Sprite> weaponSprite;
     public List<int> xpTable;
 
     //References
@@ -27,13 +24,6 @@ public class GameManager : MonoBehaviour
     public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
     {
         floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
-    }
-
-    //Upgrade weapon
-    public bool TryUpgradeWeapon()
-    {
-        weapon.UpgradeWeapon();
-        return true;
     }
 
     //Experience System

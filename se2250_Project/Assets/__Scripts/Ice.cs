@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class Ice : MonoBehaviour
 {
-       public int damage = 2;
+    public int damage = 2;
+    private string[] chars = {"mainPlayer", "wizardPlayer", "piratePlayer"};
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Fighter"))
+        if (other.tag == "Fighter")
         {
-            Enemy enemy = other.GetComponent<Enemy>();
-            if(enemy != null)
+            if(other.name == "mainPlayer" | other.name == "piratePlayer")
             {
-                enemy.TakeDamage(damage);
+                
             }
-            Destroy(other.gameObject);
+            else{
+                Destroy(other.gameObject);
+            }
         }
+    
     }
 }
