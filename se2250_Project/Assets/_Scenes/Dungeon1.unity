@@ -184,6 +184,7 @@ MonoBehaviour:
   imageRPotion: {fileID: 931872456}
   imageChest: {fileID: 1648816360}
   powerupsCollected: 0
+  directText: {fileID: 1259640140}
 --- !u!1 &20503877
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +473,7 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   sceneName: 
+  directText: {fileID: 1259640140}
 --- !u!61 &83737138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1892,6 +1894,7 @@ RectTransform:
   m_Children:
   - {fileID: 928521026}
   - {fileID: 491007271}
+  - {fileID: 1259640139}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8431,6 +8434,7 @@ MonoBehaviour:
   imageRPotion: {fileID: 931872456}
   imageChest: {fileID: 1648816360}
   powerupsCollected: 0
+  directText: {fileID: 0}
 --- !u!50 &1039600982
 Rigidbody2D:
   serializedVersion: 4
@@ -9005,6 +9009,85 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241182975}
+  m_CullTransparentMesh: 1
+--- !u!1 &1259640138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1259640139}
+  - component: {fileID: 1259640141}
+  - component: {fileID: 1259640140}
+  m_Layer: 5
+  m_Name: PickUpText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1259640139
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259640138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 612411204}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 226, y: 259}
+  m_SizeDelta: {x: 307, y: 42.4228}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1259640140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259640138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.53017086, g: 0.6981132, b: 0.5584384, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 5
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "You have collected all the pickups! \nProceed to the Big Boss Level!"
+--- !u!222 &1259640141
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259640138}
   m_CullTransparentMesh: 1
 --- !u!1 &1267515635
 GameObject:
@@ -12820,7 +12903,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoint: 30
-  maxHitPoint: 10
   recoverySpeed: 0.2
   ySpeed: 0.75
   xSpeed: 1
@@ -13560,6 +13642,7 @@ MonoBehaviour:
   imageRPotion: {fileID: 931872456}
   imageChest: {fileID: 1648816360}
   powerupsCollected: 0
+  directText: {fileID: 0}
 --- !u!4 &1435572552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 787882371914622128, guid: 1a7438dcb37349041a95bb197086e8c9, type: 3}
@@ -13931,6 +14014,7 @@ MonoBehaviour:
   imageRPotion: {fileID: 931872456}
   imageChest: {fileID: 1648816360}
   powerupsCollected: 0
+  directText: {fileID: 0}
 --- !u!50 &1501391488
 Rigidbody2D:
   serializedVersion: 4
@@ -14228,6 +14312,7 @@ MonoBehaviour:
   imageRPotion: {fileID: 931872456}
   imageChest: {fileID: 1648816360}
   powerupsCollected: 0
+  directText: {fileID: 0}
 --- !u!50 &1585637158
 Rigidbody2D:
   serializedVersion: 4
@@ -14594,10 +14679,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9971cd8326c4d598139aff7b6735c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSprite: []
-  weaponSprite:
-  - {fileID: 1839998147110866507, guid: 65354f95c674e4f768a95c9a749e9da1, type: 3}
-  - {fileID: -3476979527478288156, guid: 23ae0c0f760c4c2418ba9f351c1e6d56, type: 3}
   xpTable: 3c00000050000000640000007800000096000000
   player1: {fileID: 1297017896}
   player2: {fileID: 1962844778}
@@ -15074,7 +15155,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoint: 30
-  maxHitPoint: 10
   recoverySpeed: 0.2
   ySpeed: 1.25
   xSpeed: 1.5
@@ -15905,7 +15985,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoint: 50
-  maxHitPoint: 10
   recoverySpeed: 0.2
   ySpeed: 0.75
   xSpeed: 1
@@ -16024,8 +16103,6 @@ MonoBehaviour:
   player0: {fileID: 1297017895}
   player1: {fileID: 1962844774}
   player2: {fileID: 1725150874}
-  boundX: 0.15
-  boundY: 0.05
 --- !u!1 &1996469081
 GameObject:
   m_ObjectHideFlags: 0
@@ -26537,7 +26614,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoint: 10
-  maxHitPoint: 10
   recoverySpeed: 0.2
   ySpeed: 0.75
   xSpeed: 1
