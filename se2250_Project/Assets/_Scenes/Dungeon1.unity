@@ -12774,7 +12774,7 @@ MonoBehaviour:
   sword: {fileID: 1793804930}
   gun: {fileID: 2117435360}
   firePoint: {fileID: 508491460}
-  bulletPrefab: {fileID: 1836724464}
+  bulletPrefab: {fileID: 8664387342666174830, guid: d245b48db69a0404995d04866bfcc4a1, type: 3}
 --- !u!114 &1297017901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13807,8 +13807,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511258305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 0, z: -0.2833043}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.233, y: 0.115, z: -0.2833043}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -13826,9 +13826,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.008024786, y: -0.08024779}
   serializedVersion: 2
-  m_Radius: 0.07822755
+  m_Radius: 0.12637624
 --- !u!1 &1562747130
 GameObject:
   m_ObjectHideFlags: 0
@@ -15462,11 +15462,6 @@ Transform:
   m_Father: {fileID: 1150207198}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1836724464 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8664387342666174830, guid: d245b48db69a0404995d04866bfcc4a1, type: 3}
-  m_PrefabInstance: {fileID: 1612796586}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1857070965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7690748971588629391, guid: 9adcfc0d40cc7b545b3ac6df59e6bbca, type: 3}
