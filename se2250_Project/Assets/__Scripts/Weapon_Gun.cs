@@ -74,7 +74,7 @@ public class Weapon_Gun : MonoBehaviour
             gun.SetActive(true);                
         }
 
-        if(Input.GetKeyDown(KeyCode.H))
+        if(Input.GetKeyDown(KeyCode.J))
         {
             gun.SetActive(false);
             sword.SetActive(false);

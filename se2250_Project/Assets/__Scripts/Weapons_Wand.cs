@@ -17,19 +17,18 @@ public class Weapons_Wand : MonoBehaviour
     private SpriteRenderer SpriteRenderer;
 
 
-    void Start()
+    public void Start()
     {
         anim = gameObject.GetComponent<Animator>();
     }
 
-    void Update()
+    public void Update()
     {
-        if(Input.GetKey(KeyCode.C))
+        if(Input.GetKey(KeyCode.N))
         {
             //yield WaitForSeconds(anim["Swing"].length * anim["Swing"].speed);
             anim.SetTrigger("Swing");
-            Instantiate(icePrefab, iceLocation.position, iceLocation.rotation);
-               
+            Instantiate(icePrefab, iceLocation.position, iceLocation.rotation);  
         }    
     }
 }
