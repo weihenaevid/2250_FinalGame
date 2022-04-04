@@ -4619,8 +4619,8 @@ MonoBehaviour:
   weaponSprite: {fileID: 0}
   xpBar: {fileID: 436924954}
   playerG0: {fileID: 1297017895}
-  playerG1: {fileID: 0}
-  playerG2: {fileID: 0}
+  playerG1: {fileID: 841588066}
+  playerG2: {fileID: 1993552222}
 --- !u!95 &949323787
 Animator:
   serializedVersion: 3
@@ -8290,8 +8290,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xpTable: 3c00000050000000640000007800000096000000
   player1: {fileID: 1297017896}
-  player2: {fileID: 0}
-  player3: {fileID: 0}
+  player2: {fileID: 841588070}
+  player3: {fileID: 1993552226}
   weapon: {fileID: 0}
   floatingTextManager: {fileID: 1569714275}
   experience: 0
