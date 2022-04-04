@@ -56,8 +56,23 @@ public class Weapons : Collidable
             };
 
             col.SendMessage("RecieveDamage", dmg);
-
         }
+        else if (col.tag == "Fighter")
+        {
+            if (col.name == "piratePlayer") 
+                return;
+
+            //create a new damage object
+            Damage dmg = new Damage
+            {
+                damageAmount = damagePoint,
+                origin = transform.position,
+                pushForce = pushForce,
+
+            };
+
+            col.SendMessage("RecieveDamage", dmg);
+    }
     }
 
     private void Swing()
