@@ -7228,6 +7228,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481e12ee8e00627499486408ab82cfac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xTeleport:
+  - 3
+  yTeleport:
+  - 2.4
+  starting: {x: 1.9, y: 2.4, z: 0}
 --- !u!1 &1351219076
 GameObject:
   m_ObjectHideFlags: 0
