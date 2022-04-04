@@ -11,7 +11,7 @@ public class Ice : MonoBehaviour
     {
         if (other.tag == "Fighter")
         {
-            if(other.name == "mainPlayer" || other.name == "wizardPlayer" || other.name == "piratePlayer")
+            if(other.name == "mainPlayer" | other.name == "piratePlayer")
             {
                 
             }
