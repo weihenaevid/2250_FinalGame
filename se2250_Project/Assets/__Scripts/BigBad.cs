@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class BigBad : GhostsAndGuards
 {
+
     public float[] grenadeSpeed = { 2.8f, -2.8f };          // for the speed of the grenades
     public float[] grenadeDistance = { 0.30f, 0.25f };      // for the distance from the bug bad (the radius)
     public Transform[] grenade;     // for the position of the grenades
@@ -24,6 +25,7 @@ public class BigBad : GhostsAndGuards
         Destroy(gameObject);
         GameManager.instance.experience += xpValue;
         GameManager.instance.ShowText("+" + xpValue + " points!", 20, Color.green, transform.position, Vector3.up*50, 3.0f);
+        chest.transform.position = new Vector3(4.72f, 2.3f, 0);
         chest.SetActive(true);
     }
 }
