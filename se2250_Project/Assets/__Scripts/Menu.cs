@@ -5,10 +5,8 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    // 
+    // fields
     public Text levelText, xpText, hitpointText;
-
-    //private int currentCharacterSelection = 0;
     public Image characterSelectionSprite, weaponSprite; 
     public RectTransform xpBar;
 
@@ -16,21 +14,9 @@ public class Menu : MonoBehaviour
     public GameObject playerG1;      // wizard
     public GameObject playerG2;      // pirate
 
-    //charcater selection
-
-    //weapon change
-    public void OnClick()
-    {
-        if (GameManager.instance.TryUpgradeWeapon())
-            UpdateMenu();
-
-    }
-
 
     public void UpdateMenu()
     {
-        //weaponSprite.sprite = GameManager.instance.weaponSprite[0];
-
         levelText.text = GameManager.instance.GetCurrentLevel().ToString();
 
         if(playerG0.activeInHierarchy){
@@ -44,17 +30,6 @@ public class Menu : MonoBehaviour
         {
             hitpointText.text = GameManager.instance.player3.hitpoint.ToString();
         }
-
-        // if(GameManager.instance.player1.activeInHierarchy)
-        // {
-        //     hitpointText.text = GameManager.instance.player1.hitpoint.ToString();
-
-        // }
-        // else if (GameManager.instance.player2.activeInHierarchy)
-        // {
-        //     hitpointText.text = GameManager.instance.player2.hitpoint.ToString();
-
-        // }
 
         //exp bar
         int currLevel = GameManager.instance.GetCurrentLevel();

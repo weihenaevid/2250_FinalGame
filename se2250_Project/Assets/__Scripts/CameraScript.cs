@@ -10,8 +10,8 @@ public class CameraScript : MonoBehaviour
     public GameObject player2;      // pirate
 
 
-    public float boundX = 0.15f;
-    public float boundY = 0.05f;
+    private float boundX = 0.15f;
+    private float boundY = 0.05f;
 
     private PlayerTransition switchPlayer;
    
