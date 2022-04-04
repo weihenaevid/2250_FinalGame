@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_1 : MonoBehaviour
+public class MainPlayerMovement : MonoBehaviour
 {
     public float[] xTeleport = {-2.5f, 1f, -2.7f, -0.74f};             // for x positions 
     public float[] yTeleport = {4.07f, 4, 2.86f, 2.25f};                    // for y positions
