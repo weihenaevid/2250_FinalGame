@@ -15011,8 +15011,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1725150874}
-  Hide: {fileID: -7424474914276003461, guid: 65354f95c674e4f768a95c9a749e9da1, type: 3}
-  pirate: {fileID: 310630301815266069, guid: 65354f95c674e4f768a95c9a749e9da1, type: 3}
 --- !u!4 &1784538706
 Transform:
   m_ObjectHideFlags: 0
