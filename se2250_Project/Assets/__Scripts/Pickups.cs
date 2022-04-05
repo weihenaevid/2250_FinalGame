@@ -10,7 +10,8 @@ public class Pickups : MonoBehaviour
     public Image imageKey1, imageKey2, imageKey3, imageGPotion, imageRPotion, imageChest;//the images in the inventory bar
     public int powerupsCollected = 0;
     public Text directText;
-
+    public Text gameOver;
+    
     // Start is called before the first frame update
     void Start()
     {   
@@ -21,6 +22,7 @@ public class Pickups : MonoBehaviour
         imageRPotion.enabled = false;
         imageChest.enabled = false;
         directText.enabled = false;
+        gameOver.enabled = false;
 
         if(SceneManager.GetActiveScene().name == "BigBossLevel")
         {
@@ -30,24 +32,22 @@ public class Pickups : MonoBehaviour
             imageGPotion.enabled = true;
             imageRPotion.enabled = true;
             imageChest.enabled = false;
-             directText.enabled = false;
-
+            directText.enabled = false;
+            gameOver.enabled = false;
         }    
     }
 
     // Update is called once per frame
     void Update()
     {
-        ContinueG();
-        //Debug.Log(powerupsCollected);
+        LevelUpgrade();
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Fighter"))
         {
-            Debug.Log("pickup");
-            Debug.Log(other.name);
+            Debug.Log(imageChest.enabled);
 
             if(gameObject.name == "key_1" )//check if this gameObject is key1
             {
@@ -69,31 +69,22 @@ public class Pickups : MonoBehaviour
             {
                 imageRPotion.enabled = true;
             }
-            if(gameObject.name == "chest3" || gameObject.name == "chest" )//check if this gameObject is chest
+            if(gameObject.name == "chest" )//check if this gameObject is chest
             {
                 imageChest.enabled = true;
-                
+                gameOver.enabled = true;
+                //Invoke("GameOver", 0.5f);//gameOverScreen 
             }
-            
-
-            Destroy(gameObject);
-            //wait 4 seconds
-            
-            GameOver();//gameOverScreen            
+            Destroy(gameObject);         
         } 
     }
 
-    void GameOver()
-    {
 
-    }
-
-    void ContinueG()
+    void LevelUpgrade()
     {
         if(imageKey1.enabled && imageKey2.enabled && imageKey3.enabled && imageGPotion.enabled && imageRPotion.enabled){
             powerupsCollected = 5;
             directText.enabled = true;
-            //enable
         }
     }
 }
