@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Fighter : MonoBehaviour
 {
-    //decalre fields
+    //declare fields
     public int hitpoint = 10;
-    private int _maxHitPoint =10;
     public float recoverySpeed = 0.2f;
 
     //Immunity

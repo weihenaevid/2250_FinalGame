@@ -7,7 +7,6 @@ public class Weapons_Wand : MonoBehaviour
     public GameObject icePrefab;
     public Transform iceLocation;
 
-    private float cooldown = 1f;
     private float lastSwing;
     
     //swing
