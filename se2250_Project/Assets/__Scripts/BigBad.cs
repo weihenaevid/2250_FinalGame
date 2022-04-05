@@ -11,14 +11,40 @@ public class BigBad : GhostsAndGuards
     public Transform[] grenade;     // for the position of the grenades
     public GameObject chest;
 
+    // [SerializeField]
+    // GameObject fireball;
+
+    // float fireRate;
+    // float nextFire;
+
+    // protected override void Start()
+    // {
+    //     base.Start(); 
+
+    //     fireRate = 3f;
+    //     nextFire = Time.time;
+    // }
+
+
     private void Update()
     {
+        //CheckIfTimeToFire();
+
         for (int i = 0; i < grenade.Length; i++)
         {
             // so the grendes move around the big bad
             grenade[i].position = transform.position + new Vector3(-Mathf.Cos(Time.time * grenadeSpeed[i]) * grenadeDistance[i], Mathf.Sin(Time.time * grenadeSpeed[i]) * grenadeDistance[i], 0); 
         }
     }
+
+    // void CheckIfTimeToFire()
+    // {
+    //     if (Time.time > nextFire)
+    //     {
+    //         Instantiate (fireball, transform.position, Quaternion.identity);
+    //         nextFire = Time.time + fireRate;
+    //     }
+    // }
 
     protected override void Death()
     {
