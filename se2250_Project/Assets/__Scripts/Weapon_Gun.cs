@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon_Gun : MonoBehaviour
+public class Weapon_Gun : Collidable
 {
     public GameObject sword;
     public GameObject gun;
@@ -12,6 +12,9 @@ public class Weapon_Gun : MonoBehaviour
     public Transform iceLocation;
     public GameObject player1, player2, player3;
     public int whichWeapon = 0;
+
+    public int damagePoint = 1;
+    public float pushForce = 2.0f;
 
     void Start()
     {
@@ -88,5 +91,24 @@ public class Weapon_Gun : MonoBehaviour
         {
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         }
+    }
+
+    protected override void OnCollide(Collider2D col)
+    {
+        if (col.tag == "Fighter")
+        {
+            if (col.name == "mainPlayer") 
+                return;
+
+            //create a new damage object
+            Damage dmg = new Damage
+            {
+                damageAmount = damagePoint,
+
+            };
+
+            col.SendMessage("RecieveDamage", dmg);
+        }
+        
     }
 }

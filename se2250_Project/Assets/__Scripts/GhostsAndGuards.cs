@@ -100,6 +100,17 @@ public class GhostsAndGuards : Mover
         }
     }
 
+    //test
+    // public void TakeDamage(int damage)
+    // {
+    //     hitpoint -= damage;
+    //     if(hitpoint <=0)
+    //     {
+    //         //Die();
+    //         Death();
+    //     }
+    // }
+
     //override death method for the enemies
     protected override void Death()
     {
