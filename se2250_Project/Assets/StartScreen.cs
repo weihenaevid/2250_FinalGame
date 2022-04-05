@@ -13,7 +13,6 @@ public class StartScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      //  screen = 1;
         startS.SetActive(true);
         instr.SetActive(false);
         inv.SetActive(false);
@@ -22,27 +21,19 @@ public class StartScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // if(screen == 1)
         {
             if(Input.GetMouseButton(0)){
                 startS.SetActive(false);
                 instr.SetActive(true);
-               // screen = 2;
             }
         
         }
-       // else if(screen == 2)
         {
             if(Input.anyKey && !Input.GetMouseButton(0)){
                 startS.SetActive(false);
                 instr.SetActive(false);
                 inv.SetActive(true);
-               // screen = 3;
             }
         }
-       // else if (screen == 3){
-      //      startS.SetActive(false);
-      //      instr.SetActive(false);
-       // }
     }
 }
