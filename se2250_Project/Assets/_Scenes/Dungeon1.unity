@@ -185,6 +185,7 @@ MonoBehaviour:
   imageChest: {fileID: 1648816360}
   powerupsCollected: 0
   directText: {fileID: 1259640140}
+  gameOver: {fileID: 0}
 --- !u!1 &20503877
 GameObject:
   m_ObjectHideFlags: 0
@@ -8465,6 +8466,7 @@ MonoBehaviour:
   imageChest: {fileID: 1648816360}
   powerupsCollected: 0
   directText: {fileID: 0}
+  gameOver: {fileID: 0}
 --- !u!50 &1039600982
 Rigidbody2D:
   serializedVersion: 4
@@ -8815,6 +8817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  xpValue: 1
 --- !u!1 &1150207196
 GameObject:
   m_ObjectHideFlags: 0
@@ -13042,6 +13045,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 769bf79681b2fc849b3ad37c71654b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
   sword: {fileID: 1793804930}
   gun: {fileID: 2117435360}
   firePoint: {fileID: 508491460}
@@ -13052,6 +13069,8 @@ MonoBehaviour:
   player2: {fileID: 1962844774}
   player3: {fileID: 1725150874}
   whichWeapon: 0
+  damagePoint: 1
+  pushForce: 2
 --- !u!114 &1297017901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13679,6 +13698,7 @@ MonoBehaviour:
   imageChest: {fileID: 1648816360}
   powerupsCollected: 0
   directText: {fileID: 0}
+  gameOver: {fileID: 0}
 --- !u!4 &1435572552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 787882371914622128, guid: 1a7438dcb37349041a95bb197086e8c9, type: 3}
@@ -14051,6 +14071,7 @@ MonoBehaviour:
   imageChest: {fileID: 1648816360}
   powerupsCollected: 0
   directText: {fileID: 0}
+  gameOver: {fileID: 0}
 --- !u!50 &1501391488
 Rigidbody2D:
   serializedVersion: 4
@@ -14349,6 +14370,7 @@ MonoBehaviour:
   imageChest: {fileID: 1648816360}
   powerupsCollected: 0
   directText: {fileID: 0}
+  gameOver: {fileID: 0}
 --- !u!50 &1585637158
 Rigidbody2D:
   serializedVersion: 4
@@ -16121,6 +16143,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 769bf79681b2fc849b3ad37c71654b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
   sword: {fileID: 1793804930}
   gun: {fileID: 1936988360}
   firePoint: {fileID: 832408885}
@@ -16131,6 +16167,8 @@ MonoBehaviour:
   player2: {fileID: 1962844774}
   player3: {fileID: 1725150874}
   whichWeapon: 0
+  damagePoint: 1
+  pushForce: 2
 --- !u!1 &1985854943
 GameObject:
   m_ObjectHideFlags: 0
@@ -26635,6 +26673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  xpValue: 10
 --- !u!1001 &7690748971962930426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26669,6 +26708,10 @@ PrefabInstance:
     - target: {fileID: 7690748971588629378, guid: 9adcfc0d40cc7b545b3ac6df59e6bbca, type: 3}
       propertyPath: health
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7690748971588629378, guid: 9adcfc0d40cc7b545b3ac6df59e6bbca, type: 3}
+      propertyPath: xpValue
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7690748971588629389, guid: 9adcfc0d40cc7b545b3ac6df59e6bbca, type: 3}
       propertyPath: m_RootOrder
