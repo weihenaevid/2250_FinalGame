@@ -52,9 +52,9 @@ public class Weapon_Gun : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.G))
         {
+                        gun.SetActive(true);   
             sword.SetActive(false);
-            wand.SetActive(false);
-            gun.SetActive(true);                
+            wand.SetActive(false);             
         }
 
         if(Input.GetKeyDown(KeyCode.H))
