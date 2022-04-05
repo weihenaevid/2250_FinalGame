@@ -73,7 +73,7 @@ public class Pickups : MonoBehaviour
             {
                 imageChest.enabled = true;
                 gameOver.enabled = true;
-                //Invoke("GameOver", 0.5f);//gameOverScreen 
+    
             }
             Destroy(gameObject);         
         } 
