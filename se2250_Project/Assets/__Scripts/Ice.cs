@@ -8,6 +8,7 @@ public class Ice : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Enemy enemy = other.GetComponent<Enemy>();
         if (other.tag == "Fighter")
         {
             if(other.name == "mainPlayer" || other.name == "wizardPlayer" || other.name == "piratePlayer")
@@ -15,7 +16,7 @@ public class Ice : MonoBehaviour
                 
             }
             else{
-                Destroy(other.gameObject);
+                enemy.TakeDamage(damage);
                 Invoke("Destroy",5f); 
             }
         }
