@@ -3296,14 +3296,14 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  sword: {fileID: 0}
+  sword: {fileID: 1793804930}
   gun: {fileID: 817924062}
   firePoint: {fileID: 1090788351}
   bulletPrefab: {fileID: 8664387342666174830, guid: d245b48db69a0404995d04866bfcc4a1, type: 3}
   wand: {fileID: 1229005274}
   iceLocation: {fileID: 1443570370}
-  player1: {fileID: 0}
-  player2: {fileID: 1993552222}
+  player1: {fileID: 1297017895}
+  player2: {fileID: 841588066}
   player3: {fileID: 1993552222}
   whichWeapon: 0
   damagePoint: 1
