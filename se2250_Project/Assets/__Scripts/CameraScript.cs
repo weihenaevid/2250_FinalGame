@@ -5,18 +5,18 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour
 {
     public Transform [] lookAt;     // array of transforms for players
-    public GameObject player0;      // rehead
+    public GameObject player0;      // main player
     public GameObject player1;      // wizard
     public GameObject player2;      // pirate
 
 
-    private float boundX = 0.15f;
-    private float boundY = 0.05f;
+    private float boundX = 0.15f;   // to keep character in center
+    private float boundY = 0.05f;   // to keep character in camera
 
-    private PlayerTransition switchPlayer;
+    private PlayerTransition switchPlayer;      // from PlayerTransition
    
 
-    private void LateUpdate()
+    private void LateUpdate()       
     {
         Vector3 delta = Vector3.zero;
 
