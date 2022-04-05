@@ -14,8 +14,6 @@ public class Weapon_Gun : Collidable
     public int whichWeapon = 0;
 
     public int damagePoint = 1;
-    public float pushForce = 2.0f;
-
     void Start()
     {
         if(player1.activeSelf){
@@ -93,22 +91,22 @@ public class Weapon_Gun : Collidable
         }
     }
 
-    protected override void OnCollide(Collider2D col)
-    {
-        if (col.tag == "Fighter")
-        {
-            if (col.name == "mainPlayer") 
-                return;
+    // protected override void OnCollide(Collider2D col)
+    // {
+    //     if (col.tag == "Fighter")
+    //     {
+    //         if (col.name == "mainPlayer") 
+    //             return;
 
-            //create a new damage object
-            Damage dmg = new Damage
-            {
-                damageAmount = damagePoint,
+    //         //create a new damage object
+    //         Damage dmg = new Damage
+    //         {
+    //             damageAmount = damagePoint,
 
-            };
+    //         };
 
-            col.SendMessage("RecieveDamage", dmg);
-        }
+    //         col.SendMessage("RecieveDamage", dmg);
+    //     }
         
-    }
+
 }

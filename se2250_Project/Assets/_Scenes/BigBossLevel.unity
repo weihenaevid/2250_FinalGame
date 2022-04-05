@@ -3282,16 +3282,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 769bf79681b2fc849b3ad37c71654b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
   sword: {fileID: 0}
   gun: {fileID: 817924062}
   firePoint: {fileID: 1090788351}
   bulletPrefab: {fileID: 8664387342666174830, guid: d245b48db69a0404995d04866bfcc4a1, type: 3}
   wand: {fileID: 1229005274}
   iceLocation: {fileID: 1443570370}
-  player1: {fileID: 1297017895}
+  player1: {fileID: 0}
   player2: {fileID: 1993552222}
   player3: {fileID: 1993552222}
   whichWeapon: 0
+  damagePoint: 1
 --- !u!61 &841588069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5689,6 +5704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  xpValue: 1
 --- !u!1 &1148786489
 GameObject:
   m_ObjectHideFlags: 0
@@ -7599,6 +7615,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 769bf79681b2fc849b3ad37c71654b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
   sword: {fileID: 1793804930}
   gun: {fileID: 2117435360}
   firePoint: {fileID: 508491460}
@@ -7609,6 +7639,7 @@ MonoBehaviour:
   player2: {fileID: 841588066}
   player3: {fileID: 1993552222}
   whichWeapon: 0
+  damagePoint: 1
 --- !u!114 &1297017901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15167,6 +15198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  xpValue: 50
 --- !u!4 &3475985703110653638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5124704676375629853, guid: 3b73a1e7c3d0c4f09a12ae3881d3f9cd, type: 3}
@@ -15413,6 +15445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  xpValue: 1
 --- !u!1001 &7690748971962930426
 PrefabInstance:
   m_ObjectHideFlags: 0
