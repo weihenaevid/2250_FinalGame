@@ -16,8 +16,18 @@ public class Ice : MonoBehaviour
             }
             else{
                 Destroy(other.gameObject);
+                Invoke("Destroy",5f); 
             }
         }
-    
+    }
+
+    void Update()
+    {
+        Invoke("Destroy",10f); 
+    }
+
+    public void Destroy()
+    {
+        Destroy(gameObject);
     }
 }

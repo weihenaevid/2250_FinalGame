@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6738252107646250964}
   - component: {fileID: 6738252107646250965}
   - component: {fileID: 6738252107646250986}
+  - component: {fileID: 5210875080216667558}
   m_Layer: 6
   m_Name: skull
   m_TagString: Obstacles
@@ -109,3 +110,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.077472106, y: 0.08159852}
   m_EdgeRadius: 0
+--- !u!114 &5210875080216667558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6738252107646250987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66cbdc6c0b19b0d4fadb922357c1e528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  thrown: 1
+  offset: {x: 1, y: 1, z: 0}
+  damage: 2

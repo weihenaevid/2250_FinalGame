@@ -5,6 +5,7 @@ using UnityEngine;
 public class PirateMovement : MonoBehaviour
 {
     public GameObject player;
+    public GameObject iSword;
     bool dash = false;
     bool play = true;
 
@@ -15,6 +16,7 @@ public class PirateMovement : MonoBehaviour
             play = !play;
            // to make player turn invisible or visible if X is clicked
            player.GetComponent<SpriteRenderer>().enabled = !player.GetComponent<SpriteRenderer>().enabled;
+           iSword.GetComponent<SpriteRenderer>().enabled = !iSword.GetComponent<SpriteRenderer>().enabled;
 
         } 
 
