@@ -6,7 +6,6 @@ public class PirateMovement : MonoBehaviour
 {
     public GameObject player;
     public GameObject iSword;
-    bool dash = false;
     bool play = true;
 
     private void Update()
