@@ -5705,6 +5705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   xpValue: 1
+  chest: {fileID: 0}
 --- !u!1 &1148786489
 GameObject:
   m_ObjectHideFlags: 0
@@ -15199,6 +15200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   xpValue: 50
+  chest: {fileID: 1914185170}
 --- !u!4 &3475985703110653638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5124704676375629853, guid: 3b73a1e7c3d0c4f09a12ae3881d3f9cd, type: 3}
@@ -15446,6 +15448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   xpValue: 1
+  chest: {fileID: 0}
 --- !u!1001 &7690748971962930426
 PrefabInstance:
   m_ObjectHideFlags: 0
