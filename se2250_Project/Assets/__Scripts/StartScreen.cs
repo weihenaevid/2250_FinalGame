@@ -37,6 +37,7 @@ public class StartScreen : MonoBehaviour
             }
             if(Input.GetKeyDown(KeyCode.Alpha1)){
                 instructionScreen.SetActive(true);
+                inventory.SetActive(false);
             }
         }
     }
