@@ -10,7 +10,7 @@ public class Pickups : MonoBehaviour
     public Image imageKey1, imageKey2, imageKey3, imageGPotion, imageRPotion, imageChest;//the images in the inventory bar
     public int powerupsCollected = 0;
     public Text directText;
-    public Text gameOver;
+    public GameObject gameOver;
     
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class Pickups : MonoBehaviour
         imageRPotion.enabled = false;
         imageChest.enabled = false;
         directText.enabled = false;
-        gameOver.enabled = false;
+        gameOver.SetActive(false);
 
         if(SceneManager.GetActiveScene().name == "BigBossLevel")
         {
@@ -33,7 +33,7 @@ public class Pickups : MonoBehaviour
             imageRPotion.enabled = true;
             imageChest.enabled = false;
             directText.enabled = false;
-            gameOver.enabled = false;
+            gameOver.SetActive(false);
         }    
     }
 
@@ -72,8 +72,7 @@ public class Pickups : MonoBehaviour
             if(gameObject.name == "chest" )//check if this gameObject is chest
             {
                 imageChest.enabled = true;
-                gameOver.enabled = true;
-    
+                gameOver.SetActive(true);
             }
             Destroy(gameObject);         
         } 
