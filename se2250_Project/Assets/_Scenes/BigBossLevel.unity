@@ -9535,7 +9535,7 @@ MonoBehaviour:
   imageChest: {fileID: 373733092}
   powerupsCollected: 5
   directText: {fileID: 0}
-  gameOver: {fileID: 2089751215}
+  gameOver: {fileID: 1992979980}
 --- !u!1 &1933244965
 GameObject:
   m_ObjectHideFlags: 0
@@ -9927,7 +9927,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1992979981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14798,7 +14798,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2089751213
 RectTransform:
   m_ObjectHideFlags: 0

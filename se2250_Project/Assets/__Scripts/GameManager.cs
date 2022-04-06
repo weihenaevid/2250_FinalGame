@@ -69,7 +69,4 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Level Up");
     }
-
-    
-
 }

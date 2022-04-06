@@ -24,7 +24,7 @@ public class Pickups : MonoBehaviour
         directText.enabled = false;
         gameOver.SetActive(false);
 
-        if(SceneManager.GetActiveScene().name == "BigBossLevel")
+        if(SceneManager.GetActiveScene().name == "BigBossLevel")//if on second level
         {
             imageKey1.enabled = true;
             imageKey2.enabled = true;
@@ -43,12 +43,10 @@ public class Pickups : MonoBehaviour
         LevelUpgrade();
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)//pick up objects
     {
-        if(other.CompareTag("Fighter"))
+        if(other.CompareTag("Fighter"))//must be a user character
         {
-            Debug.Log(imageChest.enabled);
-
             if(gameObject.name == "key_1" )//check if this gameObject is key1
             {
                 imageKey1.enabled = true;
@@ -79,8 +77,8 @@ public class Pickups : MonoBehaviour
     }
 
 
-    void LevelUpgrade()
-    {
+    void LevelUpgrade()//open portal/enable level up to next scene
+    {// all five powerups must be collected
         if(imageKey1.enabled && imageKey2.enabled && imageKey3.enabled && imageGPotion.enabled && imageRPotion.enabled){
             powerupsCollected = 5;
             directText.enabled = true;
