@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 37400292}
   - component: {fileID: 37400291}
   m_Layer: 5
-  m_Name: Text
+  m_Name: GameDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 154105764}
   - component: {fileID: 154105763}
   m_Layer: 5
-  m_Name: Commands (1)
+  m_Name: CommandKeys
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1898,7 +1898,7 @@ GameObject:
   - component: {fileID: 582771997}
   - component: {fileID: 582771996}
   m_Layer: 5
-  m_Name: title (1)
+  m_Name: GameDirections
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2090,6 +2090,7 @@ GameObject:
   - component: {fileID: 612411203}
   - component: {fileID: 612411202}
   - component: {fileID: 612411201}
+  - component: {fileID: 612411205}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -2183,6 +2184,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &612411205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612411200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3073067126681124a828cbb752f00471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startScreen: {fileID: 958762640}
+  instructionScreen: {fileID: 1634916740}
+  inventory: {fileID: 1045194832}
 --- !u!1 &626589360
 GameObject:
   m_ObjectHideFlags: 0
@@ -8582,9 +8598,8 @@ GameObject:
   - component: {fileID: 958762641}
   - component: {fileID: 958762643}
   - component: {fileID: 958762642}
-  - component: {fileID: 958762644}
   m_Layer: 5
-  m_Name: StartPanel
+  m_Name: StartScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8649,21 +8664,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958762640}
   m_CullTransparentMesh: 1
---- !u!114 &958762644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958762640}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3073067126681124a828cbb752f00471, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startS: {fileID: 958762640}
-  instr: {fileID: 1634916740}
-  inv: {fileID: 0}
 --- !u!1 &968237783
 GameObject:
   m_ObjectHideFlags: 0
@@ -14598,7 +14598,7 @@ GameObject:
   - component: {fileID: 1539492326}
   - component: {fileID: 1539492325}
   m_Layer: 5
-  m_Name: title
+  m_Name: GameTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15183,9 +15183,8 @@ GameObject:
   - component: {fileID: 1634916741}
   - component: {fileID: 1634916744}
   - component: {fileID: 1634916743}
-  - component: {fileID: 1634916742}
   m_Layer: 5
-  m_Name: Instructions
+  m_Name: InstructionScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15213,21 +15212,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1634916742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634916740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3073067126681124a828cbb752f00471, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startS: {fileID: 958762640}
-  instr: {fileID: 1634916740}
-  inv: {fileID: 0}
 --- !u!114 &1634916743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15739,7 +15723,7 @@ GameObject:
   - component: {fileID: 1687421673}
   - component: {fileID: 1687421672}
   m_Layer: 5
-  m_Name: Commands
+  m_Name: CommandList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17016,9 +17000,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3073067126681124a828cbb752f00471, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startS: {fileID: 958762640}
-  instr: {fileID: 1634916740}
-  inv: {fileID: 1045194832}
+  startScreen: {fileID: 0}
+  instructionScreen: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!1 &1996469081
 GameObject:
   m_ObjectHideFlags: 0

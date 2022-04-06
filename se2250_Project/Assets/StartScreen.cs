@@ -5,34 +5,35 @@ using UnityEngine.UI;
 
 public class StartScreen : MonoBehaviour
 {
-    int screen = 0;
-    public GameObject startS;
-    public GameObject instr;
-    public GameObject inv;
+    int state = 0;
+    public GameObject startScreen;
+    public GameObject instructionScreen;
+    public GameObject inventory;
     
     // Start is called before the first frame update
     void Start()
     {
-        startS.SetActive(true);
-        instr.SetActive(false);
-        inv.SetActive(false);
+        startScreen.SetActive(true);
+        instructionScreen.SetActive(false);
+        inventory.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        {
+        if(state == 0){//start state
             if(Input.GetMouseButton(0)){
-                startS.SetActive(false);
-                instr.SetActive(true);
+                startScreen.SetActive(false);
+                instructionScreen.SetActive(true);
+                state = 1;
             }
         
         }
-        {
-            if(Input.anyKey && !Input.GetMouseButton(0)){
-                startS.SetActive(false);
-                instr.SetActive(false);
-                inv.SetActive(true);
+        if(state == 1){//instructions state
+            if(Input.GetMouseButton(1)){
+                startScreen.SetActive(false);
+                instructionScreen.SetActive(false);
+                inventory.SetActive(true);
             }
         }
     }
