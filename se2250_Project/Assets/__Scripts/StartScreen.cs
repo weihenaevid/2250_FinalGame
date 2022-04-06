@@ -22,7 +22,7 @@ public class StartScreen : MonoBehaviour
     void Update()
     {
         if(state == 0){//start state
-            if(Input.GetKeyDown(KeyCode.Alpha0)){
+            if(Input.GetMouseButton(0)){
                 startScreen.SetActive(false);
                 instructionScreen.SetActive(true);
                 state = 1;
@@ -30,10 +30,13 @@ public class StartScreen : MonoBehaviour
         
         }
         if(state == 1){//instructions state
-            if(Input.GetKeyDown(KeyCode.Alpha1)){
+            if(Input.GetMouseButton(1)){
                 startScreen.SetActive(false);
                 instructionScreen.SetActive(false);
                 inventory.SetActive(true);
+            }
+            if(Input.GetKeyDown(KeyCode.Alpha1)){
+                instructionScreen.SetActive(true);
             }
         }
     }
